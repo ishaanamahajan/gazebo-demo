@@ -1,0 +1,1 @@
+/sbel/gazebo-demo/build/car_demo/ament_cmake_environment_hooks/local_setup.zsh

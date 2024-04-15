@@ -1,0 +1,2 @@
+Invoking command in '/sbel/gazebo-demo/build/prius_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /sbel/gazebo-demo/prius_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/sbel/gazebo-demo/install/prius_description
+Invoked command in '/sbel/gazebo-demo/build/prius_description' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /sbel/gazebo-demo/prius_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/sbel/gazebo-demo/install/prius_description

@@ -1,0 +1,6 @@
+{
+  "package_name": "prius_msgs",
+  "non_idl_tuples": [
+    "/sbel/gazebo-demo/prius_msgs:msg/Control.msg"
+  ]
+}

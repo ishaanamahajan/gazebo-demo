@@ -1,0 +1,36 @@
+[0.079s] Invoking command in '/sbel/gazebo-demo/build/prius_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /sbel/gazebo-demo/prius_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/sbel/gazebo-demo/install/prius_description
+[0.120s] -- The C compiler identification is GNU 11.4.0
+[0.159s] -- The CXX compiler identification is GNU 11.4.0
+[0.165s] -- Detecting C compiler ABI info
+[0.217s] -- Detecting C compiler ABI info - done
+[0.222s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.222s] -- Detecting C compile features
+[0.222s] -- Detecting C compile features - done
+[0.224s] -- Detecting CXX compiler ABI info
+[0.282s] -- Detecting CXX compiler ABI info - done
+[0.287s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.287s] -- Detecting CXX compile features
+[0.288s] -- Detecting CXX compile features - done
+[0.296s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.421s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.469s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.517s] [31mCMake Error at CMakeLists.txt:5 (find_package):
+[0.517s]   By not providing "Findxacro.cmake" in CMAKE_MODULE_PATH this project has
+[0.517s]   asked CMake to find a package configuration file provided by "xacro", but
+[0.517s]   CMake did not find one.
+[0.517s] 
+[0.517s]   Could not find a package configuration file provided by "xacro" with any of
+[0.517s]   the following names:
+[0.517s] 
+[0.517s]     xacroConfig.cmake
+[0.517s]     xacro-config.cmake
+[0.517s] 
+[0.517s]   Add the installation prefix of "xacro" to CMAKE_PREFIX_PATH or set
+[0.517s]   "xacro_DIR" to a directory containing one of the above files.  If "xacro"
+[0.517s]   provides a separate development package or SDK, be sure it has been
+[0.518s]   installed.
+[0.518s] 
+[0.518s] [0m
+[0.518s] -- Configuring incomplete, errors occurred!
+[0.518s] See also "/sbel/gazebo-demo/build/prius_description/CMakeFiles/CMakeOutput.log".
+[0.520s] Invoked command in '/sbel/gazebo-demo/build/prius_description' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /sbel/gazebo-demo/prius_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/sbel/gazebo-demo/install/prius_description
