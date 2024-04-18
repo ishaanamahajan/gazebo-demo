@@ -499,6 +499,32 @@
   </joint>
 
 
+  <link name="imu_link">
+    <inertial>
+      <mass value="1" />
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+    </inertial>
+  </link>
+  <joint name="imu_joint" type="fixed">
+    <parent link="chassis" />
+    <child link="imu_link" />
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+  </joint>
+ 
+  <link name="gps_link">
+    <inertial>
+      <mass value="1" />
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+    </inertial>
+  </link>
+  <joint name="gps_joint" type="fixed">
+    <parent link="chassis" />
+    <child link="gps_link" />
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+  </joint>
+ 
+
+
   <!-- GAZEBO -->
   <gazebo>
     <plugin name="joint_states" filename="libgazebo_ros_joint_state_publisher.so">
@@ -1162,4 +1188,62 @@
       </plugin>
     </sensor>
   </gazebo>
+  <gazebo reference="imu_link">
+    <sensor type="imu" name="imu_sensor">
+        <pose>0 0 0 0 0 0</pose>
+        <visualize>false</visualize>
+        <update_rate>50</update_rate>
+        <always_on>1</always_on>
+        <imu>
+            <angular_velocity>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </angular_velocity>
+            <linear_acceleration>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </linear_acceleration>
+        </imu>
+        <plugin name="imu_sensor_plugin" filename="libgazebo_ros_imu_sensor.so">
+            <ros>
+                <namespace>prius</namespace>
+                <argument>~/out:=imu/data</argument>
+            </ros>
+            <frame_name>imu_link</frame_name>
+            <output_type>sensor_msgs/Imu</output_type>
+        </plugin>
+    </sensor>
+</gazebo>
+
+<gazebo reference="gps_link">
+    <sensor type="gps" name="gps_sensor">
+        <pose>0 0 0 0 0 0</pose>
+        <visualize>true</visualize>
+        <update_rate>1</update_rate>
+        <always_on>1</always_on>
+        <gps>
+            <horizontal_fov>0.5</horizontal_fov>
+            <vertical_fov>0.5</vertical_fov>
+            <position_sensing>
+                <mean>0.0</mean>
+                <stddev>0.2</stddev>
+            </position_sensing>
+            <velocity_sensing>
+                <mean>0.0</mean>
+                <stddev>0.1</stddev>
+            </velocity_sensing>
+        </gps>
+        <plugin name="gps_sensor_plugin" filename="libgazebo_ros_gps_sensor.so">
+            <ros>
+                <namespace>prius</namespace>
+                <argument>~/out:=gps/fix</argument>
+            </ros>
+            <frame_name>gps_link</frame_name>
+            <output_type>sensor_msgs/NavSatFix</output_type>
+        </plugin>
+    </sensor>
+</gazebo>
+
 </robot>
