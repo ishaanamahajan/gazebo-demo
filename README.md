@@ -20,6 +20,13 @@ A video and screenshots of the demo can be seen in this blog post: https://www.o
     </center>
 </figure>
 
+# Pre-Requisites
+``` sudo apt-get install ros-humble-ros-gz ```
+
+```sudo apt-get install ros-humble-gazebo-ros-pkgs```
+
+
+
 # Requirements
 
 This demo has been tested on Ubuntu Xenial (20.04) with ROS2 Foxy and inside docker.
