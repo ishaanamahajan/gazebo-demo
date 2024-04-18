@@ -1192,7 +1192,7 @@
     <sensor type="imu" name="imu_sensor">
         <pose>0 0 0 0 0 0</pose>
         <visualize>false</visualize>
-        <update_rate>50</update_rate>
+        <update_rate>100</update_rate>
         <always_on>1</always_on>
         <imu>
             <angular_velocity>
@@ -1221,7 +1221,7 @@
     <sensor type="gps" name="gps_sensor">
         <pose>0 0 0 0 0 0</pose>
         <visualize>true</visualize>
-        <update_rate>1</update_rate>
+        <update_rate>10</update_rate>
         <always_on>1</always_on>
         <gps>
             <horizontal_fov>0.5</horizontal_fov>
