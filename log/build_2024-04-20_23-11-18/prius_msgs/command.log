@@ -1,0 +1,6 @@
+Invoking command in '/sbel/gazebo-demo/build/prius_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /sbel/gazebo-demo/prius_msgs -DCMAKE_INSTALL_PREFIX=/sbel/gazebo-demo/install/prius_msgs
+Invoked command in '/sbel/gazebo-demo/build/prius_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /sbel/gazebo-demo/prius_msgs -DCMAKE_INSTALL_PREFIX=/sbel/gazebo-demo/install/prius_msgs
+Invoking command in '/sbel/gazebo-demo/build/prius_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /sbel/gazebo-demo/build/prius_msgs -- -j16 -l16
+Invoked command in '/sbel/gazebo-demo/build/prius_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /sbel/gazebo-demo/build/prius_msgs -- -j16 -l16
+Invoking command in '/sbel/gazebo-demo/build/prius_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /sbel/gazebo-demo/build/prius_msgs
+Invoked command in '/sbel/gazebo-demo/build/prius_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /sbel/gazebo-demo/build/prius_msgs

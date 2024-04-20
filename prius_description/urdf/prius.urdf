@@ -628,7 +628,7 @@
       <body_name>base_link</body_name>
       <topic_name>base_pose_ground_truth</topic_name>
       <frame_name>chassis</frame_name>
-      <gaussian_noise>0.01</gaussian_noise>
+      <gaussian_noise>0.00</gaussian_noise>
     </plugin>
   </gazebo>
 
@@ -1195,16 +1195,18 @@
         <update_rate>100</update_rate>
         <always_on>1</always_on>
         <imu>
-            <angular_velocity>
-                <x>0.0</x>
-                <y>0.0</y>
-                <z>0.0</z>
-            </angular_velocity>
+
             <linear_acceleration>
                 <x>0.0</x>
                 <y>0.0</y>
                 <z>0.0</z>
             </linear_acceleration>
+            <angular_velocity>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+            </angular_velocity>
+
         </imu>
         <plugin name="imu_sensor_plugin" filename="libgazebo_ros_imu_sensor.so">
             <ros>
@@ -1230,10 +1232,6 @@
                 <mean>0.0</mean>
                 <stddev>0.2</stddev>
             </position_sensing>
-            <velocity_sensing>
-                <mean>0.0</mean>
-                <stddev>0.1</stddev>
-            </velocity_sensing>
         </gps>
         <plugin name="gps_sensor_plugin" filename="libgazebo_ros_gps_sensor.so">
             <ros>
@@ -1245,5 +1243,6 @@
         </plugin>
     </sensor>
 </gazebo>
+
 
 </robot>
