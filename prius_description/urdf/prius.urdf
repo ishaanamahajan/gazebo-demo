@@ -617,20 +617,7 @@
     </plugin>
   </gazebo>
   
-  <gazebo>
-    <update_rate>30.0</update_rate>
-    <plugin name="p3d" filename="libgazebo_ros_p3d.so">
-      <ros>
-        <namespace>prius</namespace>
-        <argument>odom:=ground_truth</argument>
-      </ros>
-      <!-- <robotNamespace>/prius</robotNamespace> -->
-      <body_name>base_link</body_name>
-      <topic_name>base_pose_ground_truth</topic_name>
-      <frame_name>chassis</frame_name>
-      <gaussian_noise>0.00</gaussian_noise>
-    </plugin>
-  </gazebo>
+
 
   <gazebo reference="front_camera_link">
     <sensor type="camera" name="front_camera_sensor">
@@ -1241,7 +1228,21 @@
             <frame_name>gps_link</frame_name>
             <output_type>sensor_msgs/NavSatFix</output_type>
         </plugin>
+
+        
     </sensor>
+</gazebo>
+
+
+<gazebo>
+  <plugin name="p3d" filename="libgazebo_ros_p3d.so">
+    <ros>
+      <namespace>prius</namespace>
+      <argument>odom:=ground_truth</argument>
+    </ros>
+    <body_name>chassis</body_name>
+    <topic_name>base_pose_ground_truth</topic_name>
+  </plugin>
 </gazebo>
 
 
