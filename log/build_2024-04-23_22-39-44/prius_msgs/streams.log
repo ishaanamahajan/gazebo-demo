@@ -1,0 +1,187 @@
+[0.054s] Invoking command in '/sbel/gazebo-demo/build/prius_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /sbel/gazebo-demo/build/prius_msgs -- -j16 -l16
+[0.072s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.178s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.188s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.210s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.212s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.217s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.226s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.240s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.252s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.258s] -- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)
+[0.463s] -- Found ament_cmake_cppcheck: 0.12.8 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[0.464s] -- Found ament_cmake_cpplint: 0.12.8 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[0.465s] -- Found ament_cmake_uncrustify: 0.12.8 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[0.466s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.724s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.824s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.841s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.858s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.858s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.858s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.877s] -- Found ament_cmake_flake8: 0.12.8 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[0.878s] -- Found ament_cmake_pep257: 0.12.8 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[0.887s] -- Configuring done
+[0.916s] -- Generating done
+[0.919s] -- Build files have been written to: /sbel/gazebo-demo/build/prius_msgs
+[0.941s] [35m[1mConsolidate compiler generated dependencies of target prius_msgs__rosidl_generator_c[0m
+[0.948s] [  3%] Built target prius_msgs__cpp
+[0.950s] [  6%] [32mBuilding C object CMakeFiles/prius_msgs__rosidl_generator_c.dir/rosidl_generator_c/prius_msgs/msg/detail/control__functions.c.o[0m
+[0.955s] [  6%] Built target ament_cmake_python_symlink_prius_msgs
+[0.957s] [35m[1mConsolidate compiler generated dependencies of target prius_msgs__rosidl_typesupport_cpp[0m
+[0.957s] [35m[1mConsolidate compiler generated dependencies of target prius_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.957s] [35m[1mConsolidate compiler generated dependencies of target prius_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.968s] [ 12%] [32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/prius_msgs/msg/control__type_support.cpp.o[0m
+[0.968s] [ 12%] [32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/prius_msgs/msg/detail/control__type_support.cpp.o[0m
+[0.969s] [ 16%] [32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/prius_msgs/msg/detail/dds_fastrtps/control__type_support.cpp.o[0m
+[1.002s] [ 19%] [32m[1mLinking C shared library libprius_msgs__rosidl_generator_c.so[0m
+[1.034s] [ 22%] Built target prius_msgs__rosidl_generator_c
+[1.043s] [35m[1mConsolidate compiler generated dependencies of target prius_msgs__rosidl_typesupport_c[0m
+[1.043s] [35m[1mConsolidate compiler generated dependencies of target prius_msgs__rosidl_typesupport_introspection_c[0m
+[1.043s] [35m[1mConsolidate compiler generated dependencies of target prius_msgs__rosidl_typesupport_fastrtps_c[0m
+[1.053s] [ 29%] [32mBuilding C object CMakeFiles/prius_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/prius_msgs/msg/detail/control__type_support.c.o[0m
+[1.053s] [ 29%] [32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/prius_msgs/msg/control__type_support.cpp.o[0m
+[1.055s] [ 32%] [32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/prius_msgs/msg/detail/control__type_support_c.cpp.o[0m
+[1.080s] [ 35%] [32m[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_c.so[0m
+[1.084s] [ 38%] [32m[1mLinking C shared library libprius_msgs__rosidl_typesupport_introspection_c.so[0m
+[1.111s] [ 41%] Built target prius_msgs__rosidl_typesupport_introspection_c
+[1.112s] [ 45%] Built target prius_msgs__rosidl_typesupport_c
+[1.126s] running egg_info
+[1.127s] writing prius_msgs.egg-info/PKG-INFO
+[1.127s] writing dependency_links to prius_msgs.egg-info/dependency_links.txt
+[1.127s] writing top-level names to prius_msgs.egg-info/top_level.txt
+[1.128s] reading manifest file 'prius_msgs.egg-info/SOURCES.txt'
+[1.129s] writing manifest file 'prius_msgs.egg-info/SOURCES.txt'
+[1.149s] [ 45%] Built target ament_cmake_python_build_prius_msgs_egg
+[1.162s] [ 48%] [32m[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_cpp.so[0m
+[1.196s] [ 51%] Built target prius_msgs__rosidl_typesupport_cpp
+[1.240s] [ 54%] [32m[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[1.249s] [ 58%] [32m[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.286s] [ 61%] [32m[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[1.286s] [ 64%] Built target prius_msgs__rosidl_typesupport_introspection_cpp
+[1.300s] [ 67%] Built target prius_msgs__rosidl_typesupport_fastrtps_cpp
+[1.337s] [ 70%] Built target prius_msgs__rosidl_typesupport_fastrtps_c
+[1.354s] [ 70%] Built target prius_msgs
+[1.371s] [ 74%] Built target prius_msgs__py
+[1.379s] [35m[1mConsolidate compiler generated dependencies of target prius_msgs__rosidl_generator_py[0m
+[1.391s] [ 77%] [32mBuilding C object CMakeFiles/prius_msgs__rosidl_generator_py.dir/rosidl_generator_py/prius_msgs/msg/_control_s.c.o[0m
+[1.481s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/prius_msgs/libprius_msgs__rosidl_generator_py.so[0m
+[1.512s] [ 80%] Built target prius_msgs__rosidl_generator_py
+[1.521s] [35m[1mConsolidate compiler generated dependencies of target prius_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[1.521s] [35m[1mConsolidate compiler generated dependencies of target prius_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.521s] [35m[1mConsolidate compiler generated dependencies of target prius_msgs__rosidl_typesupport_c__pyext[0m
+[1.532s] [ 83%] [32mBuilding C object CMakeFiles/prius_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[1.532s] [ 90%] [32mBuilding C object CMakeFiles/prius_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[1.533s] [ 90%] [32mBuilding C object CMakeFiles/prius_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[1.610s] [100%] [32m[1mLinking C shared library rosidl_generator_py/prius_msgs/prius_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.610s] [100%] [32m[1mLinking C shared library rosidl_generator_py/prius_msgs/prius_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.610s] [100%] [32m[1mLinking C shared library rosidl_generator_py/prius_msgs/prius_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.641s] [100%] Built target prius_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.641s] [100%] Built target prius_msgs__rosidl_typesupport_introspection_c__pyext
+[1.641s] [100%] Built target prius_msgs__rosidl_typesupport_c__pyext
+[1.650s] Invoked command in '/sbel/gazebo-demo/build/prius_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /sbel/gazebo-demo/build/prius_msgs -- -j16 -l16
+[1.710s] Invoking command in '/sbel/gazebo-demo/build/prius_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /sbel/gazebo-demo/build/prius_msgs
+[1.716s] -- Install configuration: ""
+[1.716s] -- Execute custom install script
+[1.717s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/ament_index/resource_index/rosidl_interfaces/prius_msgs
+[1.717s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/control.h
+[1.717s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__functions.h
+[1.717s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__struct.h
+[1.717s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__type_support.h
+[1.717s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.717s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/environment/library_path.sh
+[1.718s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/environment/library_path.dsv
+[1.718s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__rosidl_typesupport_fastrtps_c.h
+[1.718s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.718s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/control.hpp
+[1.718s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__builder.hpp
+[1.718s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__struct.hpp
+[1.719s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__traits.hpp
+[1.719s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__rosidl_typesupport_fastrtps_cpp.hpp
+[1.719s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.719s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__rosidl_typesupport_introspection_c.h
+[1.719s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.720s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__rosidl_typesupport_introspection_cpp.hpp
+[1.720s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/environment/pythonpath.sh
+[1.720s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/environment/pythonpath.dsv
+[1.720s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs-0.0.1-py3.10.egg-info/PKG-INFO
+[1.720s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs-0.0.1-py3.10.egg-info/SOURCES.txt
+[1.720s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs-0.0.1-py3.10.egg-info/dependency_links.txt
+[1.720s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs-0.0.1-py3.10.egg-info/top_level.txt
+[1.721s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/__init__.py
+[1.721s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_c.c
+[1.721s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.721s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.721s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/libprius_msgs__rosidl_generator_py.so
+[1.722s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/__init__.py
+[1.722s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/_control.py
+[1.722s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/_control_s.c
+[1.722s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.722s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.722s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.722s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.722s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.723s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.723s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/msg/Control.idl
+[1.723s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/msg/Control.msg
+[1.723s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/ament_index/resource_index/package_run_dependencies/prius_msgs
+[1.723s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/ament_index/resource_index/parent_prefix_path/prius_msgs
+[1.723s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/environment/ament_prefix_path.sh
+[1.723s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/environment/ament_prefix_path.dsv
+[1.724s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/environment/path.sh
+[1.724s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/environment/path.dsv
+[1.724s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/local_setup.bash
+[1.724s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/local_setup.sh
+[1.724s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/local_setup.zsh
+[1.724s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/local_setup.dsv
+[1.724s] -- Symlinking: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/package.dsv
+[1.731s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/ament_index/resource_index/packages/prius_msgs
+[1.731s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/rosidl_cmake-extras.cmake
+[1.731s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.732s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.732s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.732s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.732s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.732s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.732s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgsConfig.cmake
+[1.732s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgsConfig-version.cmake
+[1.732s] -- Up-to-date symlink: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/package.xml
+[1.733s] -- Installing: /sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_generator_c.so
+[1.733s] -- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_generator_c.so" to ""
+[1.733s] -- Installing: /sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_fastrtps_c.so
+[1.734s] -- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[1.734s] -- Installing: /sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.734s] -- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[1.734s] -- Installing: /sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_introspection_c.so
+[1.735s] -- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_introspection_c.so" to ""
+[1.735s] -- Installing: /sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_c.so
+[1.735s] -- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_c.so" to ""
+[1.736s] -- Installing: /sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_introspection_cpp.so
+[1.736s] -- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[1.736s] -- Installing: /sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_cpp.so
+[1.737s] -- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_cpp.so" to ""
+[1.761s] Listing '/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs'...
+[1.762s] Compiling '/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/__init__.py'...
+[1.762s] Listing '/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg'...
+[1.762s] Compiling '/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/__init__.py'...
+[1.762s] Compiling '/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/_control.py'...
+[1.764s] -- Installing: /sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_generator_py.so
+[1.765s] -- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_generator_py.so" to ""
+[1.765s] -- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_cExport.cmake
+[1.765s] -- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.765s] -- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.765s] -- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.765s] -- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_cppExport.cmake
+[1.765s] -- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.765s] -- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.765s] -- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.765s] -- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.765s] -- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_cExport.cmake
+[1.765s] -- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.766s] -- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.766s] -- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.766s] -- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_cppExport.cmake
+[1.766s] -- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.766s] -- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_pyExport.cmake
+[1.766s] -- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_pyExport-noconfig.cmake
+[1.767s] Invoked command in '/sbel/gazebo-demo/build/prius_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /sbel/gazebo-demo/build/prius_msgs
