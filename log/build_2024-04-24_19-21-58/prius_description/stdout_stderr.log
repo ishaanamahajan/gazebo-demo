@@ -1,0 +1,49 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /sbel/gazebo-demo/build/prius_description
+-- Install configuration: ""
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/environment/gazebo_envs.sh
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/wheel.obj
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/hybrid_body.mtl
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/Hybrid.png
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/steering_wheel.mtl
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/model.config
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/Wheels3.png
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/Hybrid_Interior.png
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/steering_wheel.obj
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/wheel.mtl
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/hybrid_body.obj
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/urdf
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/urdf/prius.urdf
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/model.config
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/ament_index/resource_index/package_run_dependencies/prius_description
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/ament_index/resource_index/parent_prefix_path/prius_description
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/environment/ament_prefix_path.sh
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/environment/ament_prefix_path.dsv
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/environment/path.sh
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/environment/path.dsv
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/local_setup.bash
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/local_setup.sh
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/local_setup.zsh
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/local_setup.dsv
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/package.dsv
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/ament_index/resource_index/packages/prius_description
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/cmake/prius_descriptionConfig.cmake
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/cmake/prius_descriptionConfig-version.cmake
+-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/package.xml

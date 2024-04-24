@@ -1,1 +1,24 @@
-/sbel/gazebo-demo/car_demo/models/cloverleaf_interchange/model.sdf
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="cloverleaf_interchange">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://cloverleaf_interchange/meshes/cloverleaf.obj</uri>
+            <scale>0.0254 0.0254 0.0254</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://cloverleaf_interchange/meshes/cloverleaf.obj</uri>
+            <scale>0.0254 0.0254 0.0254</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

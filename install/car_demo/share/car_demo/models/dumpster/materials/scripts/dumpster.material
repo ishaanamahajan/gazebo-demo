@@ -1,1 +1,29 @@
-/sbel/gazebo-demo/car_demo/models/dumpster/materials/scripts/dumpster.material
+material Dumpster/Diffuse
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Dumpster_Diffuse.png
+      }
+    }
+  }
+}
+
+material Dumpster/Specular
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture Dumpster_Spec.png
+      }
+    }
+  }
+}

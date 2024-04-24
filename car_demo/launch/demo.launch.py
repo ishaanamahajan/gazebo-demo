@@ -70,21 +70,21 @@ def generate_launch_description():
             condition=IfCondition(LaunchConfiguration("use_rviz"))
         ),
 
-        # Node(
-        #     package="car_demo",
-        #     executable="prius_teleop_keyboard.py",
-        #     name="prius_teleop",
-        #     prefix=["xterm -hold -e"],
-        #     output="screen",
-        # ),
-
         Node(
             package="car_demo",
-            executable="pid_controller.py",
+            executable="prius_teleop_keyboard.py",
             name="prius_teleop",
             prefix=["xterm -hold -e"],
             output="screen",
         ),
+
+        # Node(
+        #     package="car_demo",
+        #     executable="pid_controller.py",
+        #     name="prius_teleop",
+        #     prefix=["xterm -hold -e"],
+        #     output="screen",
+        # ),
 
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(

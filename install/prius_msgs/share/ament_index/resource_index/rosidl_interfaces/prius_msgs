@@ -1,1 +1,2 @@
-/sbel/gazebo-demo/build/prius_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/prius_msgs
+msg/Control.idl
+msg/Control.msg

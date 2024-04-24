@@ -1,1 +1,1 @@
-/sbel/gazebo-demo/build/car_demo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/car_demo
+rclcpp;rclpy;gazebo_dev;gazebo_msgs;gazebo_ros;prius_msgs;joint_state_publisher;robot_state_publisher;rviz2;sensor_msgs;tf2_ros;xacro;xterm

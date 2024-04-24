@@ -211,17 +211,17 @@ PriusHybridPlugin/fast:
 .PHONY : PriusHybridPlugin/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_car_demo
+# Target rules for targets named ament_cmake_python_copy_car_demo
 
 # Build rule for target.
-ament_cmake_python_symlink_car_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_car_demo
-.PHONY : ament_cmake_python_symlink_car_demo
+ament_cmake_python_copy_car_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_car_demo
+.PHONY : ament_cmake_python_copy_car_demo
 
 # fast build rule for target.
-ament_cmake_python_symlink_car_demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_car_demo.dir/build.make CMakeFiles/ament_cmake_python_symlink_car_demo.dir/build
-.PHONY : ament_cmake_python_symlink_car_demo/fast
+ament_cmake_python_copy_car_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_car_demo.dir/build.make CMakeFiles/ament_cmake_python_copy_car_demo.dir/build
+.PHONY : ament_cmake_python_copy_car_demo/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_car_demo_egg
@@ -316,7 +316,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_car_demo_egg"
-	@echo "... ament_cmake_python_symlink_car_demo"
+	@echo "... ament_cmake_python_copy_car_demo"
 	@echo "... car_demo_uninstall"
 	@echo "... uninstall"
 	@echo "... PriusHybridPlugin"

@@ -1,1 +1,6 @@
-/sbel/gazebo-demo/build/prius_msgs/ament_cmake_python/prius_msgs/prius_msgs.egg-info/SOURCES.txt
+setup.py
+prius_msgs/__init__.py
+prius_msgs.egg-info/PKG-INFO
+prius_msgs.egg-info/SOURCES.txt
+prius_msgs.egg-info/dependency_links.txt
+prius_msgs.egg-info/top_level.txt

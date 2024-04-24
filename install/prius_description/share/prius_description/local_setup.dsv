@@ -1,1 +1,3 @@
-/sbel/gazebo-demo/build/prius_description/ament_cmake_environment_hooks/local_setup.dsv
+source;share/prius_description/environment/ament_prefix_path.sh
+source;share/prius_description/environment/gazebo_envs.sh
+source;share/prius_description/environment/path.sh

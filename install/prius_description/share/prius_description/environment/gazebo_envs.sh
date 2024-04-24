@@ -1,1 +1,1 @@
-/sbel/gazebo-demo/build/prius_description/ament_cmake_environment_hooks/gazebo_envs.sh
+ament_prepend_unique_value GAZEBO_MODEL_PATH "$AMENT_CURRENT_PREFIX/share/prius_description/models"

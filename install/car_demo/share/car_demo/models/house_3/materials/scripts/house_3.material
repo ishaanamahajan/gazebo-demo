@@ -1,1 +1,14 @@
-/sbel/gazebo-demo/car_demo/models/house_3/materials/scripts/house_3.material
+material House_3/Diffuse
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture House_3_Diffuse.png
+      }
+    }
+  }
+}
