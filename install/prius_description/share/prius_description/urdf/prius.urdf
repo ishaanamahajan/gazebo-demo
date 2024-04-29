@@ -606,7 +606,7 @@
       <battery_discharge_watt_hours>214</battery_discharge_watt_hours>
       <gas_efficiency>0.371</gas_efficiency>
       <min_gas_flow>8.981854013171626e-05</min_gas_flow>
-      <max_speed>37.998337013956565</max_speed>
+      <max_speed>2.0</max_speed>
       <max_steer>0.6458</max_steer>
       <flwheel_steering_p_gain>1e4</flwheel_steering_p_gain>
       <frwheel_steering_p_gain>1e4</frwheel_steering_p_gain>
@@ -1175,36 +1175,47 @@
       </plugin>
     </sensor>
   </gazebo>
-  <gazebo reference="imu_link">
+  
+    <gazebo reference="imu_link">
     <sensor type="imu" name="imu_sensor">
-        <pose>0 0 0 0 0 0</pose>
-        <visualize>false</visualize>
-        <update_rate>100</update_rate>
-        <always_on>1</always_on>
-        <imu>
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>false</visualize>
+      <update_rate>100</update_rate>
+      <always_on>1</always_on>
+      <imu>
 
-            <linear_acceleration>
-                <x>0.0</x>
-                <y>0.0</y>
-                <z>0.0</z>
-            </linear_acceleration>
-            <angular_velocity>
-                <x>0.0</x>
-                <y>0.0</y>
-                <z>0.0</z>
-            </angular_velocity>
+        <linear_acceleration>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </linear_acceleration>
+        <angular_velocity>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </angular_velocity>
 
-        </imu>
-        <plugin name="imu_sensor_plugin" filename="libgazebo_ros_imu_sensor.so">
-            <ros>
-                <namespace>prius</namespace>
-                <argument>~/out:=imu/data</argument>
-            </ros>
-            <frame_name>imu_link</frame_name>
-            <output_type>sensor_msgs/Imu</output_type>
-        </plugin>
+      </imu>
+      <plugin name="imu_sensor_plugin" filename="libgazebo_ros_imu_sensor.so">
+        <ros>
+          <namespace>prius</namespace>
+          <argument>~/out:=/imu</argument>
+        </ros>
+        <!-- <frame_name>imu_link</frame_name> -->
+        <output_type>sensor_msgs/Imu</output_type>
+        <gaussian_noise>
+          <acceleration>
+            <mean>0.0</mean>
+            <stddev>0.30</stddev>
+          </acceleration>
+          <angular_velocity>
+            <mean>0.0</mean>
+            <stddev>0.05</stddev>
+          </angular_velocity>
+        </gaussian_noise>
+      </plugin>
     </sensor>
-</gazebo>
+  </gazebo>
 
 <gazebo reference="gps_link">
     <sensor type="gps" name="gps_sensor">
@@ -1213,19 +1224,17 @@
         <update_rate>10</update_rate>
         <always_on>1</always_on>
         <gps>
-            <horizontal_fov>0.5</horizontal_fov>
-            <vertical_fov>0.5</vertical_fov>
             <position_sensing>
                 <mean>0.0</mean>
-                <stddev>0.2</stddev>
+                <stddev>0.03</stddev>
             </position_sensing>
         </gps>
         <plugin name="gps_sensor_plugin" filename="libgazebo_ros_gps_sensor.so">
             <ros>
                 <namespace>prius</namespace>
-                <argument>~/out:=gps/fix</argument>
+                <argument>~/out:=/fix</argument>
             </ros>
-            <frame_name>gps_link</frame_name>
+            <!-- <frame_name>gps_link</frame_name> -->
             <output_type>sensor_msgs/NavSatFix</output_type>
         </plugin>
 

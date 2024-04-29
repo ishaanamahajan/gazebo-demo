@@ -1,0 +1,921 @@
+[0.000000] (-) TimerEvent: {}
+[0.000296] (prius_description) JobQueued: {'identifier': 'prius_description', 'dependencies': OrderedDict()}
+[0.000348] (prius_msgs) JobQueued: {'identifier': 'prius_msgs', 'dependencies': OrderedDict()}
+[0.000439] (car_demo) JobQueued: {'identifier': 'car_demo', 'dependencies': OrderedDict([('prius_description', '/sbel/gazebo-demo/install/prius_description'), ('prius_msgs', '/sbel/gazebo-demo/install/prius_msgs')])}
+[0.000514] (prius_description) JobStarted: {'identifier': 'prius_description'}
+[0.049667] (prius_msgs) JobStarted: {'identifier': 'prius_msgs'}
+[0.097595] (prius_description) JobProgress: {'identifier': 'prius_description', 'progress': 'cmake'}
+[0.097763] (prius_description) Command: {'cmd': ['/usr/bin/cmake', '/sbel/gazebo-demo/prius_description', '-DCMAKE_INSTALL_PREFIX=/sbel/gazebo-demo/install/prius_description'], 'cwd': '/sbel/gazebo-demo/build/prius_description', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,45485,0'), ('LANGUAGE', 'en_US:en'), ('HOSTNAME', '8badff0a978e'), ('SSH_AGENT_PID', '994'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/sbel/gazebo-demo/install/car_demo/lib:/sbel/gazebo-demo/install/prius_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/sbel'), ('NO_VNC_PORT', '6901'), ('OLDPWD', '/sbel'), ('TERM_PROGRAM_VERSION', '3.2a'), ('STARTUPDIR', '/dockerstartup'), ('ROS_PYTHON_VERSION', '3'), ('VNC_COL_DEPTH', '24'), ('COLCON_PREFIX_PATH', '/sbel/gazebo-demo/install:/chrono_ros_interfaces/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NO_VNC_HOME', '/sbel/noVNC'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share/prius_description/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('TERM_PROGRAM', 'tmux'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXIYocdq/agent.993'), ('AMENT_PREFIX_PATH', '/sbel/gazebo-demo/install/car_demo:/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/sbel/gazebo-demo/build/prius_description'), ('VNC_RESOLUTION', '1600x900'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages:/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages:/chrono_ros_interfaces/install/chrono_ros_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('VNC_PW', 'sbel'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/sbel/gazebo-demo/install/car_demo:/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('VNC_PORT', '5901')]), 'shell': False}
+[0.099749] (prius_msgs) JobProgress: {'identifier': 'prius_msgs', 'progress': 'cmake'}
+[0.099787] (-) TimerEvent: {}
+[0.100006] (prius_msgs) Command: {'cmd': ['/usr/bin/cmake', '/sbel/gazebo-demo/prius_msgs', '-DCMAKE_INSTALL_PREFIX=/sbel/gazebo-demo/install/prius_msgs'], 'cwd': '/sbel/gazebo-demo/build/prius_msgs', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,45485,0'), ('LANGUAGE', 'en_US:en'), ('HOSTNAME', '8badff0a978e'), ('SSH_AGENT_PID', '994'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/sbel/gazebo-demo/install/car_demo/lib:/sbel/gazebo-demo/install/prius_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/sbel'), ('NO_VNC_PORT', '6901'), ('OLDPWD', '/sbel'), ('TERM_PROGRAM_VERSION', '3.2a'), ('STARTUPDIR', '/dockerstartup'), ('ROS_PYTHON_VERSION', '3'), ('VNC_COL_DEPTH', '24'), ('COLCON_PREFIX_PATH', '/sbel/gazebo-demo/install:/chrono_ros_interfaces/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NO_VNC_HOME', '/sbel/noVNC'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share/prius_description/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('TERM_PROGRAM', 'tmux'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXIYocdq/agent.993'), ('AMENT_PREFIX_PATH', '/sbel/gazebo-demo/install/car_demo:/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/sbel/gazebo-demo/build/prius_msgs'), ('VNC_RESOLUTION', '1600x900'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages:/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages:/chrono_ros_interfaces/install/chrono_ros_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('VNC_PW', 'sbel'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/sbel/gazebo-demo/install/car_demo:/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('VNC_PORT', '5901')]), 'shell': False}
+[0.145967] (prius_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.146153] (prius_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.187156] (prius_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.187321] (prius_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.192671] (prius_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.193297] (prius_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199850] (-) TimerEvent: {}
+[0.250168] (prius_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.250340] (prius_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.254722] (prius_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.254905] (prius_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.255168] (prius_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.257400] (prius_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.257490] (prius_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.257602] (prius_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.257913] (prius_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.260435] (prius_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299966] (-) TimerEvent: {}
+[0.326853] (prius_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.327195] (prius_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.331589] (prius_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.331808] (prius_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.332024] (prius_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.332134] (prius_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.332222] (prius_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.332554] (prius_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.335026] (prius_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.335113] (prius_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400043] (-) TimerEvent: {}
+[0.461541] (prius_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.461720] (prius_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.500124] (-) TimerEvent: {}
+[0.531705] (prius_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.535458] (prius_description) StdoutLine: {'line': b'-- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)\n'}
+[0.563040] (prius_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.567913] (prius_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.575263] (prius_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.581671] (prius_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.585356] (prius_description) StdoutLine: {'line': b'-- Generating done\n'}
+[0.585927] (prius_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.586325] (prius_description) StdoutLine: {'line': b'-- Build files have been written to: /sbel/gazebo-demo/build/prius_description\n'}
+[0.590009] (prius_description) CommandEnded: {'returncode': 0}
+[0.590357] (prius_description) JobProgress: {'identifier': 'prius_description', 'progress': 'build'}
+[0.590910] (prius_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/sbel/gazebo-demo/build/prius_description', '--', '-j16', '-l16'], 'cwd': '/sbel/gazebo-demo/build/prius_description', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,45485,0'), ('LANGUAGE', 'en_US:en'), ('HOSTNAME', '8badff0a978e'), ('SSH_AGENT_PID', '994'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/sbel/gazebo-demo/install/car_demo/lib:/sbel/gazebo-demo/install/prius_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/sbel'), ('NO_VNC_PORT', '6901'), ('OLDPWD', '/sbel'), ('TERM_PROGRAM_VERSION', '3.2a'), ('STARTUPDIR', '/dockerstartup'), ('ROS_PYTHON_VERSION', '3'), ('VNC_COL_DEPTH', '24'), ('COLCON_PREFIX_PATH', '/sbel/gazebo-demo/install:/chrono_ros_interfaces/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NO_VNC_HOME', '/sbel/noVNC'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share/prius_description/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('TERM_PROGRAM', 'tmux'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXIYocdq/agent.993'), ('AMENT_PREFIX_PATH', '/sbel/gazebo-demo/install/car_demo:/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/sbel/gazebo-demo/build/prius_description'), ('VNC_RESOLUTION', '1600x900'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages:/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages:/chrono_ros_interfaces/install/chrono_ros_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('VNC_PW', 'sbel'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/sbel/gazebo-demo/install/car_demo:/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('VNC_PORT', '5901')]), 'shell': False}
+[0.600183] (-) TimerEvent: {}
+[0.600889] (prius_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.615195] (prius_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.623014] (prius_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.623752] (prius_description) CommandEnded: {'returncode': 0}
+[0.643455] (prius_description) JobProgress: {'identifier': 'prius_description', 'progress': 'install'}
+[0.650362] (prius_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/sbel/gazebo-demo/build/prius_description'], 'cwd': '/sbel/gazebo-demo/build/prius_description', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,45485,0'), ('LANGUAGE', 'en_US:en'), ('HOSTNAME', '8badff0a978e'), ('SSH_AGENT_PID', '994'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/sbel/gazebo-demo/install/car_demo/lib:/sbel/gazebo-demo/install/prius_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/sbel'), ('NO_VNC_PORT', '6901'), ('OLDPWD', '/sbel'), ('TERM_PROGRAM_VERSION', '3.2a'), ('STARTUPDIR', '/dockerstartup'), ('ROS_PYTHON_VERSION', '3'), ('VNC_COL_DEPTH', '24'), ('COLCON_PREFIX_PATH', '/sbel/gazebo-demo/install:/chrono_ros_interfaces/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NO_VNC_HOME', '/sbel/noVNC'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share/prius_description/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('TERM_PROGRAM', 'tmux'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXIYocdq/agent.993'), ('AMENT_PREFIX_PATH', '/sbel/gazebo-demo/install/car_demo:/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/sbel/gazebo-demo/build/prius_description'), ('VNC_RESOLUTION', '1600x900'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages:/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages:/chrono_ros_interfaces/install/chrono_ros_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('VNC_PW', 'sbel'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/sbel/gazebo-demo/install/car_demo:/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('VNC_PORT', '5901')]), 'shell': False}
+[0.656377] (prius_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.656599] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/environment/gazebo_envs.sh\n'}
+[0.656793] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes\n'}
+[0.656893] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/wheel.obj\n'}
+[0.657180] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/hybrid_body.mtl\n'}
+[0.657442] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/Hybrid.png\n'}
+[0.658805] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/steering_wheel.mtl\n'}
+[0.659061] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/model.config\n'}
+[0.659304] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/Wheels3.png\n'}
+[0.660477] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/Hybrid_Interior.png\n'}
+[0.661986] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/steering_wheel.obj\n'}
+[0.662278] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/wheel.mtl\n'}
+[0.662522] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/hybrid_body.obj\n'}
+[0.663360] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/urdf\n'}
+[0.663453] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/urdf/prius.urdf\n'}
+[0.663689] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/model.config\n'}
+[0.664080] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/ament_index/resource_index/package_run_dependencies/prius_description\n'}
+[0.664333] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/ament_index/resource_index/parent_prefix_path/prius_description\n'}
+[0.664532] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/environment/ament_prefix_path.sh\n'}
+[0.664717] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/environment/ament_prefix_path.dsv\n'}
+[0.664903] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/environment/path.sh\n'}
+[0.665086] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/environment/path.dsv\n'}
+[0.665266] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/local_setup.bash\n'}
+[0.665446] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/local_setup.sh\n'}
+[0.665632] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/local_setup.zsh\n'}
+[0.665812] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/local_setup.dsv\n'}
+[0.665989] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/package.dsv\n'}
+[0.666221] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/ament_index/resource_index/packages/prius_description\n'}
+[0.666462] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/cmake/prius_descriptionConfig.cmake\n'}
+[0.666618] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/cmake/prius_descriptionConfig-version.cmake\n'}
+[0.666794] (prius_description) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/package.xml\n'}
+[0.668075] (prius_description) CommandEnded: {'returncode': 0}
+[0.700266] (-) TimerEvent: {}
+[0.766141] (prius_description) JobEnded: {'identifier': 'prius_description', 'rc': 0}
+[0.800342] (-) TimerEvent: {}
+[0.825500] (prius_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.8 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[0.827732] (prius_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.8 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[0.829925] (prius_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.8 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[0.832288] (prius_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.900413] (-) TimerEvent: {}
+[1.000601] (-) TimerEvent: {}
+[1.094546] (prius_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.100660] (-) TimerEvent: {}
+[1.196151] (prius_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.200726] (-) TimerEvent: {}
+[1.213362] (prius_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.215165] (prius_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.233992] (prius_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.234100] (prius_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.234160] (prius_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.234214] (prius_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.249403] (prius_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.284936] (prius_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.8 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[1.287107] (prius_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.8 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[1.294948] (prius_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.300789] (-) TimerEvent: {}
+[1.325709] (prius_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.328265] (prius_msgs) StdoutLine: {'line': b'-- Build files have been written to: /sbel/gazebo-demo/build/prius_msgs\n'}
+[1.333754] (prius_msgs) CommandEnded: {'returncode': 0}
+[1.334131] (prius_msgs) JobProgress: {'identifier': 'prius_msgs', 'progress': 'build'}
+[1.334462] (prius_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/sbel/gazebo-demo/build/prius_msgs', '--', '-j16', '-l16'], 'cwd': '/sbel/gazebo-demo/build/prius_msgs', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,45485,0'), ('LANGUAGE', 'en_US:en'), ('HOSTNAME', '8badff0a978e'), ('SSH_AGENT_PID', '994'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/sbel/gazebo-demo/install/car_demo/lib:/sbel/gazebo-demo/install/prius_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/sbel'), ('NO_VNC_PORT', '6901'), ('OLDPWD', '/sbel'), ('TERM_PROGRAM_VERSION', '3.2a'), ('STARTUPDIR', '/dockerstartup'), ('ROS_PYTHON_VERSION', '3'), ('VNC_COL_DEPTH', '24'), ('COLCON_PREFIX_PATH', '/sbel/gazebo-demo/install:/chrono_ros_interfaces/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NO_VNC_HOME', '/sbel/noVNC'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share/prius_description/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('TERM_PROGRAM', 'tmux'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXIYocdq/agent.993'), ('AMENT_PREFIX_PATH', '/sbel/gazebo-demo/install/car_demo:/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/sbel/gazebo-demo/build/prius_msgs'), ('VNC_RESOLUTION', '1600x900'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages:/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages:/chrono_ros_interfaces/install/chrono_ros_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('VNC_PW', 'sbel'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/sbel/gazebo-demo/install/car_demo:/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('VNC_PORT', '5901')]), 'shell': False}
+[1.370270] (prius_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.378861] (prius_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.384888] (prius_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_prius_msgs\n'}
+[1.400880] (-) TimerEvent: {}
+[1.501110] (-) TimerEvent: {}
+[1.554024] (prius_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.554400] (prius_msgs) StdoutLine: {'line': b'creating prius_msgs.egg-info\n'}
+[1.554563] (prius_msgs) StdoutLine: {'line': b'writing prius_msgs.egg-info/PKG-INFO\n'}
+[1.554806] (prius_msgs) StdoutLine: {'line': b'writing dependency_links to prius_msgs.egg-info/dependency_links.txt\n'}
+[1.554939] (prius_msgs) StdoutLine: {'line': b'writing top-level names to prius_msgs.egg-info/top_level.txt\n'}
+[1.555059] (prius_msgs) StdoutLine: {'line': b"writing manifest file 'prius_msgs.egg-info/SOURCES.txt'\n"}
+[1.556298] (prius_msgs) StdoutLine: {'line': b"reading manifest file 'prius_msgs.egg-info/SOURCES.txt'\n"}
+[1.556637] (prius_msgs) StdoutLine: {'line': b"writing manifest file 'prius_msgs.egg-info/SOURCES.txt'\n"}
+[1.557698] (prius_msgs) StdoutLine: {'line': b'[  6%] Built target prius_msgs__cpp\n'}
+[1.559566] (prius_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/prius_msgs__rosidl_generator_c.dir/rosidl_generator_c/prius_msgs/msg/detail/control__functions.c.o\x1b[0m\n'}
+[1.566564] (prius_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.566722] (prius_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.566794] (prius_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.577555] (prius_msgs) StdoutLine: {'line': b'[ 19%] Built target ament_cmake_python_build_prius_msgs_egg\n'}
+[1.598027] (prius_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libprius_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[1.601181] (-) TimerEvent: {}
+[1.630436] (prius_msgs) StdoutLine: {'line': b'[ 22%] Built target prius_msgs__rosidl_generator_c\n'}
+[1.639923] (prius_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.640095] (prius_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.640189] (prius_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.701278] (-) TimerEvent: {}
+[1.737739] (prius_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/prius_msgs/msg/control__type_support.cpp.o\x1b[0m\n'}
+[1.752296] (prius_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/prius_msgs/msg/detail/control__type_support.cpp.o\x1b[0m\n'}
+[1.754782] (prius_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/prius_msgs/msg/detail/dds_fastrtps/control__type_support.cpp.o\x1b[0m\n'}
+[1.801362] (-) TimerEvent: {}
+[1.813581] (prius_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/prius_msgs/msg/control__type_support.cpp.o\x1b[0m\n'}
+[1.827919] (prius_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/prius_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/prius_msgs/msg/detail/control__type_support.c.o\x1b[0m\n'}
+[1.839488] (prius_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[1.839712] (prius_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/prius_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/prius_msgs/msg/detail/control__type_support_c.cpp.o\x1b[0m\n'}
+[1.859532] (prius_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libprius_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.875503] (prius_msgs) StdoutLine: {'line': b'[ 58%] Built target prius_msgs__rosidl_typesupport_c\n'}
+[1.889121] (prius_msgs) StdoutLine: {'line': b'[ 58%] Built target prius_msgs__rosidl_typesupport_introspection_c\n'}
+[1.901436] (-) TimerEvent: {}
+[1.924264] (prius_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[1.960927] (prius_msgs) StdoutLine: {'line': b'[ 61%] Built target prius_msgs__rosidl_typesupport_cpp\n'}
+[2.001540] (-) TimerEvent: {}
+[2.012017] (prius_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.023125] (prius_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.060465] (prius_msgs) StdoutLine: {'line': b'[ 67%] Built target prius_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.077378] (prius_msgs) StdoutLine: {'line': b'[ 67%] Built target prius_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.085419] (prius_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libprius_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.101599] (-) TimerEvent: {}
+[2.137577] (prius_msgs) StdoutLine: {'line': b'[ 70%] Built target prius_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.154199] (prius_msgs) StdoutLine: {'line': b'[ 70%] Built target prius_msgs\n'}
+[2.169992] (prius_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.201665] (-) TimerEvent: {}
+[2.301842] (-) TimerEvent: {}
+[2.402039] (-) TimerEvent: {}
+[2.403754] (prius_msgs) StdoutLine: {'line': b'[ 74%] Built target prius_msgs__py\n'}
+[2.419964] (prius_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/prius_msgs__rosidl_generator_py.dir/rosidl_generator_py/prius_msgs/msg/_control_s.c.o\x1b[0m\n'}
+[2.493353] (prius_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/prius_msgs/libprius_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[2.502099] (-) TimerEvent: {}
+[2.525530] (prius_msgs) StdoutLine: {'line': b'[ 80%] Built target prius_msgs__rosidl_generator_py\n'}
+[2.542171] (prius_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/prius_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[2.542347] (prius_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/prius_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[2.542647] (prius_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/prius_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.602203] (-) TimerEvent: {}
+[2.619881] (prius_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/prius_msgs/prius_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.620083] (prius_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/prius_msgs/prius_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.620151] (prius_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/prius_msgs/prius_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.652063] (prius_msgs) StdoutLine: {'line': b'[100%] Built target prius_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.652236] (prius_msgs) StdoutLine: {'line': b'[100%] Built target prius_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[2.652319] (prius_msgs) StdoutLine: {'line': b'[100%] Built target prius_msgs__rosidl_typesupport_c__pyext\n'}
+[2.661378] (prius_msgs) CommandEnded: {'returncode': 0}
+[2.702265] (-) TimerEvent: {}
+[2.720793] (prius_msgs) JobProgress: {'identifier': 'prius_msgs', 'progress': 'install'}
+[2.721132] (prius_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/sbel/gazebo-demo/build/prius_msgs'], 'cwd': '/sbel/gazebo-demo/build/prius_msgs', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,45485,0'), ('LANGUAGE', 'en_US:en'), ('HOSTNAME', '8badff0a978e'), ('SSH_AGENT_PID', '994'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/sbel/gazebo-demo/install/car_demo/lib:/sbel/gazebo-demo/install/prius_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/sbel'), ('NO_VNC_PORT', '6901'), ('OLDPWD', '/sbel'), ('TERM_PROGRAM_VERSION', '3.2a'), ('STARTUPDIR', '/dockerstartup'), ('ROS_PYTHON_VERSION', '3'), ('VNC_COL_DEPTH', '24'), ('COLCON_PREFIX_PATH', '/sbel/gazebo-demo/install:/chrono_ros_interfaces/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NO_VNC_HOME', '/sbel/noVNC'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share/prius_description/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('TERM_PROGRAM', 'tmux'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXIYocdq/agent.993'), ('AMENT_PREFIX_PATH', '/sbel/gazebo-demo/install/car_demo:/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/sbel/gazebo-demo/build/prius_msgs'), ('VNC_RESOLUTION', '1600x900'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages:/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages:/chrono_ros_interfaces/install/chrono_ros_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('VNC_PW', 'sbel'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/sbel/gazebo-demo/install/car_demo:/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('VNC_PORT', '5901')]), 'shell': False}
+[2.728170] (prius_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.728519] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/ament_index/resource_index/rosidl_interfaces/prius_msgs\n'}
+[2.728727] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs\n'}
+[2.728903] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg\n'}
+[2.729005] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.729173] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail\n'}
+[2.729281] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__struct.h\n'}
+[2.729448] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__type_support.h\n'}
+[2.729625] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__functions.c\n'}
+[2.729804] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__functions.h\n'}
+[2.729975] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/control.h\n'}
+[2.730258] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/environment/library_path.sh\n'}
+[2.730437] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/environment/library_path.dsv\n'}
+[2.730680] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_generator_c.so\n'}
+[2.731122] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_generator_c.so" to ""\n'}
+[2.731181] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs\n'}
+[2.731240] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg\n'}
+[2.731298] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.731444] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail\n'}
+[2.731506] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__rosidl_typesupport_fastrtps_c.h\n'}
+[2.731706] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[2.732145] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[2.732206] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs\n'}
+[2.732282] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg\n'}
+[2.732346] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/control.hpp\n'}
+[2.732484] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail\n'}
+[2.732547] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__builder.hpp\n'}
+[2.732784] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__traits.hpp\n'}
+[2.732955] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__struct.hpp\n'}
+[2.733143] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs\n'}
+[2.733201] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg\n'}
+[2.733257] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.733415] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail\n'}
+[2.733482] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/dds_fastrtps\n'}
+[2.733581] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.733784] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.734227] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[2.734289] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs\n'}
+[2.734347] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg\n'}
+[2.734405] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.734543] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail\n'}
+[2.734603] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__rosidl_typesupport_introspection_c.h\n'}
+[2.734780] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__type_support.c\n'}
+[2.734985] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_introspection_c.so\n'}
+[2.735405] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[2.735476] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_c.so\n'}
+[2.735851] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_c.so" to ""\n'}
+[2.735913] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs\n'}
+[2.735969] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg\n'}
+[2.736026] (prius_msgs) StdoutLine: {'line': b'-- Up-to-date: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail\n'}
+[2.736083] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__type_support.cpp\n'}
+[2.736230] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/include/prius_msgs/prius_msgs/msg/detail/control__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.736553] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[2.736906] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[2.736967] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_cpp.so\n'}
+[2.737421] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[2.737483] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/environment/pythonpath.sh\n'}
+[2.737663] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/environment/pythonpath.dsv\n'}
+[2.737840] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs-0.0.1-py3.10.egg-info\n'}
+[2.738121] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[2.738295] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[2.738466] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[2.738636] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[2.738824] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs\n'}
+[2.738942] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.739131] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.739338] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/__init__.py\n'}
+[2.739507] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/libprius_msgs__rosidl_generator_py.so\n'}
+[2.739708] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.739894] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.740095] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg\n'}
+[2.740208] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/_control.py\n'}
+[2.740462] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/__init__.py\n'}
+[2.740631] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/_control_s.c\n'}
+[2.740816] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.741017] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/_prius_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[2.765722] (prius_msgs) StdoutLine: {'line': b"Listing '/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs'...\n"}
+[2.765793] (prius_msgs) StdoutLine: {'line': b"Compiling '/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/__init__.py'...\n"}
+[2.765848] (prius_msgs) StdoutLine: {'line': b"Listing '/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg'...\n"}
+[2.765920] (prius_msgs) StdoutLine: {'line': b"Compiling '/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/__init__.py'...\n"}
+[2.765974] (prius_msgs) StdoutLine: {'line': b"Compiling '/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/msg/_control.py'...\n"}
+[2.768412] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.768955] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[2.769220] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.769692] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[2.769905] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.770337] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages/prius_msgs/prius_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[2.770402] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_generator_py.so\n'}
+[2.770821] (prius_msgs) StdoutLine: {'line': b'-- Set runtime path of "/sbel/gazebo-demo/install/prius_msgs/lib/libprius_msgs__rosidl_generator_py.so" to ""\n'}
+[2.770931] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/msg/Control.idl\n'}
+[2.771112] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/msg/Control.msg\n'}
+[2.771353] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/ament_index/resource_index/package_run_dependencies/prius_msgs\n'}
+[2.771606] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/ament_index/resource_index/parent_prefix_path/prius_msgs\n'}
+[2.771801] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/environment/ament_prefix_path.sh\n'}
+[2.771982] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/environment/ament_prefix_path.dsv\n'}
+[2.772166] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/environment/path.sh\n'}
+[2.772787] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/environment/path.dsv\n'}
+[2.772967] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/local_setup.bash\n'}
+[2.773145] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/local_setup.sh\n'}
+[2.773327] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/local_setup.zsh\n'}
+[2.773503] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/local_setup.dsv\n'}
+[2.773678] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/package.dsv\n'}
+[2.773917] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/ament_index/resource_index/packages/prius_msgs\n'}
+[2.774163] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_cExport.cmake\n'}
+[2.774359] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.774564] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.774761] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.774958] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_cppExport.cmake\n'}
+[2.775154] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.775350] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.775549] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.775747] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.775949] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_cExport.cmake\n'}
+[2.776144] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.776348] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.776544] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.776743] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[2.776939] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.777135] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_pyExport.cmake\n'}
+[2.777331] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/export_prius_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.777520] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[2.777704] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.777894] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.778080] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.778270] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.778453] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.778639] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.778825] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgsConfig.cmake\n'}
+[2.778991] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake/prius_msgsConfig-version.cmake\n'}
+[2.779168] (prius_msgs) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/package.xml\n'}
+[2.780867] (prius_msgs) CommandEnded: {'returncode': 0}
+[2.802326] (-) TimerEvent: {}
+[2.902477] (-) TimerEvent: {}
+[2.941124] (prius_msgs) JobEnded: {'identifier': 'prius_msgs', 'rc': 0}
+[2.941803] (car_demo) JobStarted: {'identifier': 'car_demo'}
+[2.995177] (car_demo) JobProgress: {'identifier': 'car_demo', 'progress': 'cmake'}
+[2.995471] (car_demo) Command: {'cmd': ['/usr/bin/cmake', '/sbel/gazebo-demo/car_demo', '-DCMAKE_INSTALL_PREFIX=/sbel/gazebo-demo/install/car_demo'], 'cwd': '/sbel/gazebo-demo/build/car_demo', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,45485,0'), ('LANGUAGE', 'en_US:en'), ('HOSTNAME', '8badff0a978e'), ('SSH_AGENT_PID', '994'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/sbel/gazebo-demo/install/prius_msgs/lib:/sbel/gazebo-demo/install/car_demo/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/sbel'), ('NO_VNC_PORT', '6901'), ('OLDPWD', '/sbel'), ('TERM_PROGRAM_VERSION', '3.2a'), ('STARTUPDIR', '/dockerstartup'), ('ROS_PYTHON_VERSION', '3'), ('VNC_COL_DEPTH', '24'), ('COLCON_PREFIX_PATH', '/sbel/gazebo-demo/install:/chrono_ros_interfaces/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NO_VNC_HOME', '/sbel/noVNC'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/sbel/gazebo-demo/install/prius_description/share/prius_description/models:/opt/ros/humble/share/prius_description/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('TERM_PROGRAM', 'tmux'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXIYocdq/agent.993'), ('AMENT_PREFIX_PATH', '/sbel/gazebo-demo/install/car_demo:/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/sbel/gazebo-demo/build/car_demo'), ('VNC_RESOLUTION', '1600x900'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages:/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages:/chrono_ros_interfaces/install/chrono_ros_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('VNC_PW', 'sbel'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/sbel/gazebo-demo/install/car_demo:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('VNC_PORT', '5901')]), 'shell': False}
+[3.002538] (-) TimerEvent: {}
+[3.040314] (car_demo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[3.082768] (car_demo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[3.088355] (car_demo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.102610] (-) TimerEvent: {}
+[3.145444] (car_demo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.150836] (car_demo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.151015] (car_demo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.151271] (car_demo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.153672] (car_demo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.202719] (-) TimerEvent: {}
+[3.219009] (car_demo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.224412] (car_demo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.224596] (car_demo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.224903] (car_demo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.228159] (car_demo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.302798] (-) TimerEvent: {}
+[3.354285] (car_demo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[3.402862] (-) TimerEvent: {}
+[3.429571] (car_demo) StdoutLine: {'line': b'-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.472943] (car_demo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.478109] (car_demo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.485942] (car_demo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.497197] (car_demo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.503190] (-) TimerEvent: {}
+[3.513335] (car_demo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.570589] (car_demo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.573360] (car_demo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.603721] (-) TimerEvent: {}
+[3.673809] (car_demo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[3.703802] (-) TimerEvent: {}
+[3.705058] (car_demo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[3.757898] (car_demo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.768140] (car_demo) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.803892] (-) TimerEvent: {}
+[3.828779] (car_demo) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.828935] (car_demo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.887669] (car_demo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.888775] (car_demo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.903956] (-) TimerEvent: {}
+[3.999999] (car_demo) StdoutLine: {'line': b'-- Found rclpy: 3.3.10 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[4.001601] (car_demo) StdoutLine: {'line': b'-- Found gazebo_dev: 3.7.0 (/opt/ros/humble/share/gazebo_dev/cmake)\n'}
+[4.004269] (-) TimerEvent: {}
+[4.008933] (car_demo) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[4.009789] (car_demo) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[4.021985] (car_demo) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[4.104362] (-) TimerEvent: {}
+[4.135037] (car_demo) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[4.179116] (car_demo) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[4.201348] (car_demo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[4.204417] (-) TimerEvent: {}
+[4.227993] (car_demo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[4.242306] (car_demo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[4.248711] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.254458] (car_demo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[4.255464] (car_demo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[4.255723] (car_demo) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[4.259652] (car_demo) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[4.271241] (car_demo) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[4.301564] (car_demo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[4.304496] (-) TimerEvent: {}
+[4.306628] (car_demo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[4.313344] (car_demo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[4.316590] (car_demo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[4.316679] (car_demo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[4.319796] (car_demo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[4.319883] (car_demo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[4.322944] (car_demo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[4.323033] (car_demo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[4.326034] (car_demo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[4.326123] (car_demo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[4.329230] (car_demo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[4.329319] (car_demo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[4.332439] (car_demo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[4.404233] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.404576] (-) TimerEvent: {}
+[4.407408] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[4.407767] (car_demo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[4.432932] (car_demo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[4.453227] (car_demo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[4.458592] (car_demo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[4.471438] (car_demo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[4.504651] (-) TimerEvent: {}
+[4.506896] (car_demo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[4.511045] (car_demo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[4.522870] (car_demo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[4.552637] (car_demo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[4.555829] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[4.556183] (car_demo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[4.580219] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.584210] (car_demo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[4.595857] (car_demo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[4.604730] (-) TimerEvent: {}
+[4.626502] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[4.629555] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[4.629906] (car_demo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[4.630115] (car_demo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[4.630711] (car_demo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[4.631633] (car_demo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[4.641074] (car_demo) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[4.641440] (car_demo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[4.644434] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[4.644789] (car_demo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[4.645050] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.648434] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[4.648759] (car_demo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[4.704803] (-) TimerEvent: {}
+[4.724469] (car_demo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[4.733614] (car_demo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[4.745401] (car_demo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[4.775724] (car_demo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[4.779947] (car_demo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[4.791265] (car_demo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[4.804868] (-) TimerEvent: {}
+[4.821529] (car_demo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[4.821853] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[4.822138] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.822420] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[4.826378] (car_demo) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[4.826595] (car_demo) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[4.838620] (car_demo) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[4.870854] (car_demo) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[4.904932] (-) TimerEvent: {}
+[5.005097] (-) TimerEvent: {}
+[5.041942] (car_demo) StdoutLine: {'line': b'-- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[5.047087] (car_demo) StdoutLine: {'line': b'-- Found prius_msgs: 0.0.1 (/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake)\n'}
+[5.083119] (car_demo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[5.083638] (car_demo) StdoutLine: {'line': b'-- Found prius_description: 0.0.1 (/sbel/gazebo-demo/install/prius_description/share/prius_description/cmake)\n'}
+[5.105174] (-) TimerEvent: {}
+[5.154360] (car_demo) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.197273] (car_demo) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.5 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[5.199694] (car_demo) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[5.205252] (-) TimerEvent: {}
+[5.218231] (car_demo) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.256737] (car_demo) StdoutLine: {'line': b'-- Generating done\n'}
+[5.259095] (car_demo) StdoutLine: {'line': b'-- Build files have been written to: /sbel/gazebo-demo/build/car_demo\n'}
+[5.268448] (car_demo) CommandEnded: {'returncode': 0}
+[5.268986] (car_demo) JobProgress: {'identifier': 'car_demo', 'progress': 'build'}
+[5.269413] (car_demo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/sbel/gazebo-demo/build/car_demo', '--', '-j16', '-l16'], 'cwd': '/sbel/gazebo-demo/build/car_demo', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,45485,0'), ('LANGUAGE', 'en_US:en'), ('HOSTNAME', '8badff0a978e'), ('SSH_AGENT_PID', '994'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/sbel/gazebo-demo/install/prius_msgs/lib:/sbel/gazebo-demo/install/car_demo/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/sbel'), ('NO_VNC_PORT', '6901'), ('OLDPWD', '/sbel'), ('TERM_PROGRAM_VERSION', '3.2a'), ('STARTUPDIR', '/dockerstartup'), ('ROS_PYTHON_VERSION', '3'), ('VNC_COL_DEPTH', '24'), ('COLCON_PREFIX_PATH', '/sbel/gazebo-demo/install:/chrono_ros_interfaces/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NO_VNC_HOME', '/sbel/noVNC'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/sbel/gazebo-demo/install/prius_description/share/prius_description/models:/opt/ros/humble/share/prius_description/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('TERM_PROGRAM', 'tmux'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXIYocdq/agent.993'), ('AMENT_PREFIX_PATH', '/sbel/gazebo-demo/install/car_demo:/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/sbel/gazebo-demo/build/car_demo'), ('VNC_RESOLUTION', '1600x900'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages:/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages:/chrono_ros_interfaces/install/chrono_ros_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('VNC_PW', 'sbel'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/sbel/gazebo-demo/install/car_demo:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('VNC_PORT', '5901')]), 'shell': False}
+[5.305340] (-) TimerEvent: {}
+[5.315814] (car_demo) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[5.315975] (car_demo) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/PriusHybridPlugin.dir/plugins/PriusHybridPlugin.cc.o\x1b[0m\n'}
+[5.316089] (car_demo) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[5.322549] (car_demo) StdoutLine: {'line': b'[ 37%] Built target ament_cmake_python_copy_car_demo\n'}
+[5.405429] (-) TimerEvent: {}
+[5.491279] (car_demo) StdoutLine: {'line': b'running egg_info\n'}
+[5.491653] (car_demo) StdoutLine: {'line': b'creating car_demo.egg-info\n'}
+[5.491778] (car_demo) StdoutLine: {'line': b'writing car_demo.egg-info/PKG-INFO\n'}
+[5.491916] (car_demo) StdoutLine: {'line': b'writing dependency_links to car_demo.egg-info/dependency_links.txt\n'}
+[5.492157] (car_demo) StdoutLine: {'line': b'writing top-level names to car_demo.egg-info/top_level.txt\n'}
+[5.492290] (car_demo) StdoutLine: {'line': b"writing manifest file 'car_demo.egg-info/SOURCES.txt'\n"}
+[5.493492] (car_demo) StdoutLine: {'line': b"reading manifest file 'car_demo.egg-info/SOURCES.txt'\n"}
+[5.493831] (car_demo) StdoutLine: {'line': b"writing manifest file 'car_demo.egg-info/SOURCES.txt'\n"}
+[5.505489] (-) TimerEvent: {}
+[5.513381] (car_demo) StdoutLine: {'line': b'[ 37%] Built target ament_cmake_python_build_car_demo_egg\n'}
+[5.605604] (-) TimerEvent: {}
+[5.705877] (-) TimerEvent: {}
+[5.709491] (car_demo) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[5.765499] (car_demo) StdoutLine: {'line': b'[ 50%] Built target gtest_main\n'}
+[5.805954] (-) TimerEvent: {}
+[5.906193] (-) TimerEvent: {}
+[6.006478] (-) TimerEvent: {}
+[6.106744] (-) TimerEvent: {}
+[6.207005] (-) TimerEvent: {}
+[6.307267] (-) TimerEvent: {}
+[6.407515] (-) TimerEvent: {}
+[6.507766] (-) TimerEvent: {}
+[6.608030] (-) TimerEvent: {}
+[6.708300] (-) TimerEvent: {}
+[6.808590] (-) TimerEvent: {}
+[6.908848] (-) TimerEvent: {}
+[7.009100] (-) TimerEvent: {}
+[7.081758] (car_demo) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[7.109196] (-) TimerEvent: {}
+[7.164168] (car_demo) StdoutLine: {'line': b'[ 62%] Built target gtest\n'}
+[7.181346] (car_demo) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/PriusHybridPluginTest.dir/plugins/PriusHybridPlugin.cc.o\x1b[0m\n'}
+[7.209261] (-) TimerEvent: {}
+[7.309477] (-) TimerEvent: {}
+[7.409720] (-) TimerEvent: {}
+[7.509968] (-) TimerEvent: {}
+[7.610214] (-) TimerEvent: {}
+[7.710464] (-) TimerEvent: {}
+[7.810715] (-) TimerEvent: {}
+[7.910961] (-) TimerEvent: {}
+[8.011209] (-) TimerEvent: {}
+[8.111471] (-) TimerEvent: {}
+[8.211729] (-) TimerEvent: {}
+[8.311983] (-) TimerEvent: {}
+[8.412234] (-) TimerEvent: {}
+[8.512492] (-) TimerEvent: {}
+[8.612742] (-) TimerEvent: {}
+[8.712993] (-) TimerEvent: {}
+[8.813265] (-) TimerEvent: {}
+[8.913892] (-) TimerEvent: {}
+[9.014147] (-) TimerEvent: {}
+[9.114397] (-) TimerEvent: {}
+[9.214663] (-) TimerEvent: {}
+[9.314914] (-) TimerEvent: {}
+[9.415180] (-) TimerEvent: {}
+[9.515447] (-) TimerEvent: {}
+[9.615709] (-) TimerEvent: {}
+[9.716226] (-) TimerEvent: {}
+[9.816576] (-) TimerEvent: {}
+[9.916834] (-) TimerEvent: {}
+[10.017086] (-) TimerEvent: {}
+[10.117337] (-) TimerEvent: {}
+[10.217589] (-) TimerEvent: {}
+[10.317845] (-) TimerEvent: {}
+[10.418091] (-) TimerEvent: {}
+[10.518340] (-) TimerEvent: {}
+[10.618603] (-) TimerEvent: {}
+[10.718869] (-) TimerEvent: {}
+[10.819143] (-) TimerEvent: {}
+[10.919422] (-) TimerEvent: {}
+[11.019692] (-) TimerEvent: {}
+[11.119964] (-) TimerEvent: {}
+[11.220237] (-) TimerEvent: {}
+[11.320519] (-) TimerEvent: {}
+[11.420784] (-) TimerEvent: {}
+[11.521050] (-) TimerEvent: {}
+[11.621319] (-) TimerEvent: {}
+[11.721590] (-) TimerEvent: {}
+[11.822114] (-) TimerEvent: {}
+[11.922383] (-) TimerEvent: {}
+[12.022639] (-) TimerEvent: {}
+[12.122890] (-) TimerEvent: {}
+[12.223163] (-) TimerEvent: {}
+[12.323428] (-) TimerEvent: {}
+[12.423939] (-) TimerEvent: {}
+[12.524197] (-) TimerEvent: {}
+[12.624465] (-) TimerEvent: {}
+[12.724739] (-) TimerEvent: {}
+[12.824995] (-) TimerEvent: {}
+[12.925252] (-) TimerEvent: {}
+[13.025522] (-) TimerEvent: {}
+[13.126045] (-) TimerEvent: {}
+[13.226319] (-) TimerEvent: {}
+[13.326604] (-) TimerEvent: {}
+[13.426867] (-) TimerEvent: {}
+[13.527123] (-) TimerEvent: {}
+[13.627376] (-) TimerEvent: {}
+[13.727633] (-) TimerEvent: {}
+[13.827897] (-) TimerEvent: {}
+[13.928177] (-) TimerEvent: {}
+[14.028477] (-) TimerEvent: {}
+[14.128756] (-) TimerEvent: {}
+[14.229025] (-) TimerEvent: {}
+[14.329292] (-) TimerEvent: {}
+[14.429557] (-) TimerEvent: {}
+[14.529864] (-) TimerEvent: {}
+[14.630125] (-) TimerEvent: {}
+[14.730385] (-) TimerEvent: {}
+[14.830658] (-) TimerEvent: {}
+[14.930952] (-) TimerEvent: {}
+[15.031223] (-) TimerEvent: {}
+[15.131492] (-) TimerEvent: {}
+[15.231762] (-) TimerEvent: {}
+[15.332035] (-) TimerEvent: {}
+[15.432306] (-) TimerEvent: {}
+[15.532578] (-) TimerEvent: {}
+[15.632852] (-) TimerEvent: {}
+[15.733111] (-) TimerEvent: {}
+[15.833377] (-) TimerEvent: {}
+[15.933637] (-) TimerEvent: {}
+[16.033889] (-) TimerEvent: {}
+[16.134152] (-) TimerEvent: {}
+[16.234409] (-) TimerEvent: {}
+[16.334669] (-) TimerEvent: {}
+[16.434923] (-) TimerEvent: {}
+[16.535185] (-) TimerEvent: {}
+[16.635441] (-) TimerEvent: {}
+[16.735701] (-) TimerEvent: {}
+[16.835960] (-) TimerEvent: {}
+[16.936223] (-) TimerEvent: {}
+[17.036501] (-) TimerEvent: {}
+[17.136756] (-) TimerEvent: {}
+[17.237021] (-) TimerEvent: {}
+[17.337281] (-) TimerEvent: {}
+[17.437543] (-) TimerEvent: {}
+[17.537788] (-) TimerEvent: {}
+[17.638037] (-) TimerEvent: {}
+[17.738288] (-) TimerEvent: {}
+[17.838544] (-) TimerEvent: {}
+[17.938800] (-) TimerEvent: {}
+[18.039051] (-) TimerEvent: {}
+[18.139301] (-) TimerEvent: {}
+[18.239998] (-) TimerEvent: {}
+[18.340259] (-) TimerEvent: {}
+[18.440513] (-) TimerEvent: {}
+[18.540771] (-) TimerEvent: {}
+[18.641035] (-) TimerEvent: {}
+[18.741299] (-) TimerEvent: {}
+[18.841563] (-) TimerEvent: {}
+[18.941826] (-) TimerEvent: {}
+[19.042076] (-) TimerEvent: {}
+[19.142325] (-) TimerEvent: {}
+[19.242582] (-) TimerEvent: {}
+[19.342840] (-) TimerEvent: {}
+[19.443349] (-) TimerEvent: {}
+[19.543617] (-) TimerEvent: {}
+[19.643879] (-) TimerEvent: {}
+[19.659125] (car_demo) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX shared library libPriusHybridPlugin.so\x1b[0m\n'}
+[19.743977] (-) TimerEvent: {}
+[19.844239] (-) TimerEvent: {}
+[19.944523] (-) TimerEvent: {}
+[20.044785] (-) TimerEvent: {}
+[20.145037] (-) TimerEvent: {}
+[20.199812] (car_demo) StdoutLine: {'line': b'[ 87%] Built target PriusHybridPlugin\n'}
+[20.245098] (-) TimerEvent: {}
+[20.345312] (-) TimerEvent: {}
+[20.445556] (-) TimerEvent: {}
+[20.545826] (-) TimerEvent: {}
+[20.646084] (-) TimerEvent: {}
+[20.746330] (-) TimerEvent: {}
+[20.846583] (-) TimerEvent: {}
+[20.946835] (-) TimerEvent: {}
+[21.047087] (-) TimerEvent: {}
+[21.147343] (-) TimerEvent: {}
+[21.247626] (-) TimerEvent: {}
+[21.347881] (-) TimerEvent: {}
+[21.387423] (car_demo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable PriusHybridPluginTest\x1b[0m\n'}
+[21.447974] (-) TimerEvent: {}
+[21.548220] (-) TimerEvent: {}
+[21.648488] (-) TimerEvent: {}
+[21.748743] (-) TimerEvent: {}
+[21.848995] (-) TimerEvent: {}
+[21.949243] (-) TimerEvent: {}
+[22.049503] (-) TimerEvent: {}
+[22.149775] (-) TimerEvent: {}
+[22.250028] (-) TimerEvent: {}
+[22.299452] (car_demo) StdoutLine: {'line': b'[100%] Built target PriusHybridPluginTest\n'}
+[22.308619] (car_demo) CommandEnded: {'returncode': 0}
+[22.336452] (car_demo) JobProgress: {'identifier': 'car_demo', 'progress': 'install'}
+[22.336851] (car_demo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/sbel/gazebo-demo/build/car_demo'], 'cwd': '/sbel/gazebo-demo/build/car_demo', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,45485,0'), ('LANGUAGE', 'en_US:en'), ('HOSTNAME', '8badff0a978e'), ('SSH_AGENT_PID', '994'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/sbel/gazebo-demo/install/prius_msgs/lib:/sbel/gazebo-demo/install/car_demo/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/sbel'), ('NO_VNC_PORT', '6901'), ('OLDPWD', '/sbel'), ('TERM_PROGRAM_VERSION', '3.2a'), ('STARTUPDIR', '/dockerstartup'), ('ROS_PYTHON_VERSION', '3'), ('VNC_COL_DEPTH', '24'), ('COLCON_PREFIX_PATH', '/sbel/gazebo-demo/install:/chrono_ros_interfaces/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NO_VNC_HOME', '/sbel/noVNC'), ('TERM', 'screen'), ('GAZEBO_MODEL_PATH', '/sbel/gazebo-demo/install/prius_description/share/prius_description/models:/opt/ros/humble/share/prius_description/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('TERM_PROGRAM', 'tmux'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXIYocdq/agent.993'), ('AMENT_PREFIX_PATH', '/sbel/gazebo-demo/install/car_demo:/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/sbel/gazebo-demo/build/car_demo'), ('VNC_RESOLUTION', '1600x900'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages:/sbel/gazebo-demo/install/prius_msgs/local/lib/python3.10/dist-packages:/chrono_ros_interfaces/install/chrono_ros_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('VNC_PW', 'sbel'), ('COLCON', '1'), ('TMUX_PANE', '%0'), ('CMAKE_PREFIX_PATH', '/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/sbel/gazebo-demo/install/car_demo:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble'), ('VNC_PORT', '5901')]), 'shell': False}
+[22.343131] (car_demo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.343378] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/library_path.sh\n'}
+[22.343576] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/library_path.dsv\n'}
+[22.343750] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/gazebo_plugins.sh\n'}
+[22.343926] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/gazebo_plugins.dsv\n'}
+[22.344099] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/pythonpath.sh\n'}
+[22.344284] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/pythonpath.dsv\n'}
+[22.344454] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info\n'}
+[22.344687] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[22.344850] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[22.345017] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[22.345277] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[22.345457] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo\n'}
+[22.345552] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo/__init__.py\n'}
+[22.350080] (-) TimerEvent: {}
+[22.368902] (car_demo) StdoutLine: {'line': b"Listing '/sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo'...\n"}
+[22.368992] (car_demo) StdoutLine: {'line': b"Compiling '/sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo/__init__.py'...\n"}
+[22.371471] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/lib/car_demo/pid_controller.py\n'}
+[22.371682] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/lib/car_demo/prius_teleop_keyboard.py\n'}
+[22.371957] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/lib/car_demo/joystick_translator.py\n'}
+[22.372151] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/lib/libPriusHybridPlugin.so\n'}
+[22.384815] (car_demo) StdoutLine: {'line': b'-- Set runtime path of "/sbel/gazebo-demo/install/car_demo/lib/libPriusHybridPlugin.so" to ""\n'}
+[22.384993] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/ament_index/resource_index/package_run_dependencies/car_demo\n'}
+[22.385352] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/ament_index/resource_index/parent_prefix_path/car_demo\n'}
+[22.385553] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/ament_prefix_path.sh\n'}
+[22.385746] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/ament_prefix_path.dsv\n'}
+[22.385934] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/path.sh\n'}
+[22.386119] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/path.dsv\n'}
+[22.386302] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/local_setup.bash\n'}
+[22.386483] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/local_setup.sh\n'}
+[22.386668] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/local_setup.zsh\n'}
+[22.386846] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/local_setup.dsv\n'}
+[22.387027] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/package.dsv\n'}
+[22.387270] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/ament_index/resource_index/packages/car_demo\n'}
+[22.387510] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[22.387695] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[22.387879] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[22.388066] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/cmake/car_demoConfig.cmake\n'}
+[22.388228] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/cmake/car_demoConfig-version.cmake\n'}
+[22.388514] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/package.xml\n'}
+[22.388678] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/launch\n'}
+[22.388796] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/launch/demo.launch.py\n'}
+[22.388960] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/launch/spawn_prius.launch.py\n'}
+[22.389115] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models\n'}
+[22.389205] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign\n'}
+[22.389301] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/model-1_4.sdf\n'}
+[22.389462] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/meshes\n'}
+[22.389561] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/meshes/speed_limit_sign.dae\n'}
+[22.389756] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/model-1_3.sdf\n'}
+[22.389914] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials\n'}
+[22.390007] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures\n'}
+[22.390112] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_90.png\n'}
+[22.390591] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_30.png\n'}
+[22.391086] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_120.png\n'}
+[22.391553] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_40.png\n'}
+[22.392010] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_16.png\n'}
+[22.392470] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_50.png\n'}
+[22.392924] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_110.png\n'}
+[22.393367] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_130.png\n'}
+[22.393817] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/StopSign_Diffuse.png\n'}
+[22.394349] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_60.png\n'}
+[22.394814] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_100.png\n'}
+[22.395266] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_80.png\n'}
+[22.395721] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_70.png\n'}
+[22.396170] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/StopSign_Spec.png\n'}
+[22.396785] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_Spec.png\n'}
+[22.397243] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/model.config\n'}
+[22.397407] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/model.sdf\n'}
+[22.397571] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall\n'}
+[22.397668] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/model-1_4.sdf\n'}
+[22.397826] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/model-1_3.sdf\n'}
+[22.397980] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/materials\n'}
+[22.398071] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/materials/scripts\n'}
+[22.398165] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/materials/scripts/grey_wall.material\n'}
+[22.398328] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/materials/textures\n'}
+[22.398514] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/materials/textures/grey_wall.png\n'}
+[22.403286] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/model.config\n'}
+[22.403434] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/model.sdf\n'}
+[22.403583] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone\n'}
+[22.403675] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/model-1_4.sdf\n'}
+[22.403845] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/meshes\n'}
+[22.403948] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/meshes/construction_cone.dae\n'}
+[22.404137] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/model-1_3.sdf\n'}
+[22.404328] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/materials\n'}
+[22.404414] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/materials/textures\n'}
+[22.404510] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/materials/textures/Construction_Cone_Diffuse.png\n'}
+[22.405294] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/model.config\n'}
+[22.405453] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/model.sdf\n'}
+[22.405608] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3\n'}
+[22.405701] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/model-1_4.sdf\n'}
+[22.405857] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/meshes\n'}
+[22.405953] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/meshes/house_3.dae\n'}
+[22.406534] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/model-1_3.sdf\n'}
+[22.406688] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/materials\n'}
+[22.406778] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/materials/scripts\n'}
+[22.406874] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/materials/scripts/house_3.material\n'}
+[22.407037] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/materials/textures\n'}
+[22.407137] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/materials/textures/House_3_Diffuse.png\n'}
+[22.408234] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/model.config\n'}
+[22.408406] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/model.sdf\n'}
+[22.408558] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1\n'}
+[22.408652] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/model-1_4.sdf\n'}
+[22.408804] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/meshes\n'}
+[22.408896] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/meshes/house_1.dae\n'}
+[22.409448] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/model-1_3.sdf\n'}
+[22.409598] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/materials\n'}
+[22.409686] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/materials/scripts\n'}
+[22.409782] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/materials/scripts/house_1.material\n'}
+[22.409946] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/materials/textures\n'}
+[22.410045] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/materials/textures/House_1_Normal.png\n'}
+[22.411125] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/materials/textures/House_1_Diffuse.png\n'}
+[22.412103] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/materials/textures/House_1_Spec.png\n'}
+[22.413024] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/model.config\n'}
+[22.413183] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/model.sdf\n'}
+[22.413333] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity\n'}
+[22.413420] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/meshes\n'}
+[22.413518] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/meshes/mcity.obj\n'}
+[22.414475] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/meshes/mcity.mtl\n'}
+[22.414638] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials\n'}
+[22.414727] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures\n'}
+[22.414831] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/GuardRail.png\n'}
+[22.415564] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/OverheadSigns.png\n'}
+[22.415847] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Brick.png\n'}
+[22.416252] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Road_DoubleYellowLine.png\n'}
+[22.416617] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Road_SingleWhiteLine.png\n'}
+[22.416978] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Road_DoubleYellowLine_Light.png\n'}
+[22.417345] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Road_Blank.png\n'}
+[22.417711] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/StreetLamp_Short.png\n'}
+[22.418243] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Colors.png\n'}
+[22.418438] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/OverheadSignBase.png\n'}
+[22.418630] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/StreetLamp_Tall.png\n'}
+[22.419232] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Tunnel.png\n'}
+[22.419656] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Buildings.png\n'}
+[22.419851] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Concrete_Ground.png\n'}
+[22.420455] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Crosswalk.png\n'}
+[22.420771] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/TrafficBarrel.png\n'}
+[22.421348] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/RailroadGate.png\n'}
+[22.422394] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Gravel.png\n'}
+[22.426004] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Grass.png\n'}
+[22.429442] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Curb.png\n'}
+[22.430113] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Road_Blank_Light.png\n'}
+[22.430398] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Asphalt.png\n'}
+[22.430898] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/model.config\n'}
+[22.431054] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/model.sdf\n'}
+[22.431204] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2\n'}
+[22.431300] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/model-1_4.sdf\n'}
+[22.431457] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/meshes\n'}
+[22.431552] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/meshes/house_2.dae\n'}
+[22.431967] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/model-1_3.sdf\n'}
+[22.432120] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/materials\n'}
+[22.432209] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/materials/scripts\n'}
+[22.432310] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/materials/scripts/house_2.material\n'}
+[22.432470] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/materials/textures\n'}
+[22.432567] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/materials/textures/House_2_Diffuse.png\n'}
+[22.433901] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/model.config\n'}
+[22.434058] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/model.sdf\n'}
+[22.434208] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier\n'}
+[22.434299] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/model-1_4.sdf\n'}
+[22.434452] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/meshes\n'}
+[22.434545] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/meshes/jersey_barrier.dae\n'}
+[22.434774] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/materials\n'}
+[22.434861] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/materials/textures\n'}
+[22.434968] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/materials/textures/jersey_barrier_spec.png\n'}
+[22.435201] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/materials/textures/jersey_barrier_diffuse.png\n'}
+[22.435549] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/materials/textures/jersey_barrier.png\n'}
+[22.435911] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/model.config\n'}
+[22.436069] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/model.sdf\n'}
+[22.436222] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant\n'}
+[22.436522] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/model-1_2.sdf\n'}
+[22.436677] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/model-1_4.sdf\n'}
+[22.436825] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/meshes\n'}
+[22.436924] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/meshes/powerplant.dae\n'}
+[22.438963] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/model-1_3.sdf\n'}
+[22.439122] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials\n'}
+[22.439210] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures\n'}
+[22.439320] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_8.png\n'}
+[22.439561] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_37.png\n'}
+[22.439732] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_1.png\n'}
+[22.439916] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_36.png\n'}
+[22.440135] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_23.png\n'}
+[22.440371] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_25.png\n'}
+[22.440838] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_27.png\n'}
+[22.441331] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_6.png\n'}
+[22.442117] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_13.png\n'}
+[22.442579] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_2.png\n'}
+[22.442782] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_21.png\n'}
+[22.443241] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_34.png\n'}
+[22.443435] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_33.png\n'}
+[22.443622] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_7.png\n'}
+[22.443801] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_32.png\n'}
+[22.444126] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_19.png\n'}
+[22.444380] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_20.png\n'}
+[22.444704] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_11.png\n'}
+[22.444913] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_38.png\n'}
+[22.445094] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_17.png\n'}
+[22.445356] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_3.png\n'}
+[22.445940] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_35.png\n'}
+[22.446134] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_10.png\n'}
+[22.446342] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_12.png\n'}
+[22.446538] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_26.png\n'}
+[22.446724] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_9.png\n'}
+[22.446969] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_.png\n'}
+[22.447332] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_22.png\n'}
+[22.447564] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/model.config\n'}
+[22.447718] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/model.sdf\n'}
+[22.447873] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange\n'}
+[22.447963] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/meshes\n'}
+[22.448056] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/meshes/cloverleaf.obj\n'}
+[22.448409] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/meshes/cloverleaf.mtl\n'}
+[22.448571] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/materials\n'}
+[22.448660] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/materials/textures\n'}
+[22.448755] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/materials/textures/arrow.png\n'}
+[22.448945] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/materials/textures/grass.png\n'}
+[22.450140] (-) TimerEvent: {}
+[22.452599] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/materials/textures/cross.png\n'}
+[22.453888] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/materials/textures/road.png\n'}
+[22.455242] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/materials/textures/concrete.png\n'}
+[22.457301] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/model.config\n'}
+[22.457456] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/model.sdf\n'}
+[22.457607] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station\n'}
+[22.457698] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/model-1_4.sdf\n'}
+[22.457851] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/meshes\n'}
+[22.457944] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/meshes/gas_station.dae\n'}
+[22.459028] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/model-1_3.sdf\n'}
+[22.459178] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/materials\n'}
+[22.459267] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/materials/scripts\n'}
+[22.459366] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/materials/scripts/gas_station.material\n'}
+[22.459527] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/materials/textures\n'}
+[22.459628] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/materials/textures/GasStation_Normal.png\n'}
+[22.460121] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/materials/textures/GasStation_Spec.png\n'}
+[22.460816] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/materials/textures/GasStation_Diffuse.png\n'}
+[22.461982] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/model.config\n'}
+[22.462135] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/model.sdf\n'}
+[22.462284] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster\n'}
+[22.462380] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/model-1_4.sdf\n'}
+[22.462531] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/meshes\n'}
+[22.462623] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/meshes/dumpster.dae\n'}
+[22.462847] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/model-1_3.sdf\n'}
+[22.462998] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/materials\n'}
+[22.463090] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/materials/scripts\n'}
+[22.463187] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/materials/scripts/dumpster.material\n'}
+[22.463349] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/materials/textures\n'}
+[22.463445] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/materials/textures/Dumpster_Spec.png\n'}
+[22.464565] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/materials/textures/Dumpster_Diffuse.png\n'}
+[22.466423] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/model.config\n'}
+[22.466578] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/model.sdf\n'}
+[22.466731] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/rviz\n'}
+[22.466819] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/rviz/ros2.rviz\n'}
+[22.466992] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/worlds\n'}
+[22.467077] (car_demo) StdoutLine: {'line': b'-- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/worlds/mcity.world\n'}
+[22.467561] (car_demo) StdoutLine: {'line': b'-- Up-to-date: /sbel/gazebo-demo/install/car_demo/lib/libPriusHybridPlugin.so\n'}
+[22.469808] (car_demo) CommandEnded: {'returncode': 0}
+[22.550212] (-) TimerEvent: {}
+[22.608771] (car_demo) JobEnded: {'identifier': 'car_demo', 'rc': 0}
+[22.609255] (-) EventReactorShutdown: {}

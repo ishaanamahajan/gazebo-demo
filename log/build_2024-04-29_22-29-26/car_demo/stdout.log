@@ -111,8 +111,8 @@
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /sbel/gazebo-demo/build/car_demo
-[ 25%] [32mBuilding CXX object CMakeFiles/PriusHybridPlugin.dir/plugins/PriusHybridPlugin.cc.o[0m
 [ 25%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/PriusHybridPlugin.dir/plugins/PriusHybridPlugin.cc.o[0m
 [ 37%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
 [ 37%] Built target ament_cmake_python_copy_car_demo
 running egg_info
