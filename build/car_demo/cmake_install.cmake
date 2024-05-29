@@ -84,7 +84,7 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/car_demo" TYPE PROGRAM FILES
-    "/sbel/gazebo-demo/car_demo/scripts/pid_controller.py"
+    "/sbel/gazebo-demo/car_demo/scripts/trajectory_controller.py"
     "/sbel/gazebo-demo/car_demo/scripts/prius_teleop_keyboard.py"
     "/sbel/gazebo-demo/car_demo/scripts/joystick_translator.py"
     )

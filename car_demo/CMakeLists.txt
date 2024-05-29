@@ -68,7 +68,7 @@ ament_environment_hooks("${CMAKE_CURRENT_SOURCE_DIR}/env-hooks/gazebo_plugins.sh
 ament_python_install_package(${PROJECT_NAME})
 # Install Python executables
 install(PROGRAMS
-  scripts/pid_controller.py
+  scripts/trajectory_controller.py
   scripts/prius_teleop_keyboard.py
   scripts/joystick_translator.py
   DESTINATION lib/${PROJECT_NAME}

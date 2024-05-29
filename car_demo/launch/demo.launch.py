@@ -78,13 +78,17 @@ def generate_launch_description():
             output="screen",
         ),
 
-        # Node(
-        #     package="car_demo",
-        #     executable="pid_controller.py",
-        #     name="prius_teleop",
-        #     prefix=["xterm -hold -e"],
-        #     output="screen",
-        # ),
+        Node(
+            package='car_demo',
+            executable='trajectory_controller.py',
+            name='trajectory_controller',
+            parameters=[
+                {"mode": LaunchConfiguration('trajectory_mode')},
+                {"duration": LaunchConfiguration('trajectory_duration')}
+            ],
+            output='screen',
+        ),
+
 
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(

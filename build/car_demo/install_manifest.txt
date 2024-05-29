@@ -9,7 +9,7 @@
 /sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/SOURCES.txt
 /sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/top_level.txt
 /sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo/__init__.py
-/sbel/gazebo-demo/install/car_demo/lib/car_demo/pid_controller.py
+/sbel/gazebo-demo/install/car_demo/lib/car_demo/trajectory_controller.py
 /sbel/gazebo-demo/install/car_demo/lib/car_demo/prius_teleop_keyboard.py
 /sbel/gazebo-demo/install/car_demo/lib/car_demo/joystick_translator.py
 /sbel/gazebo-demo/install/car_demo/lib/libPriusHybridPlugin.so
