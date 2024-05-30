@@ -1,0 +1,284 @@
+[0.633s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.633s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x76db570dde10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x76db570dfd00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x76db570dfd00>>)
+[0.665s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.665s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.665s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.665s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.665s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.665s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.665s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/sbel/gazebo-demo'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['ignore', 'ignore_ament_install']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'ignore'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'ignore_ament_install'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['colcon_pkg']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'colcon_pkg'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['colcon_meta']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'colcon_meta'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['ros']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'ros'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['cmake', 'python']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'cmake'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'python'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['python_setup_py']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'python_setup_py'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(car_demo) by extensions ['ignore', 'ignore_ament_install']
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(car_demo) by extension 'ignore'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(car_demo) by extension 'ignore_ament_install'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(car_demo) by extensions ['colcon_pkg']
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(car_demo) by extension 'colcon_pkg'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(car_demo) by extensions ['colcon_meta']
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(car_demo) by extension 'colcon_meta'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(car_demo) by extensions ['ros']
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(car_demo) by extension 'ros'
+[0.676s] DEBUG:colcon.colcon_core.package_identification:Package 'car_demo' with type 'ros.ament_cmake' and name 'car_demo'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(prius_description) by extensions ['ignore', 'ignore_ament_install']
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(prius_description) by extension 'ignore'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(prius_description) by extension 'ignore_ament_install'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(prius_description) by extensions ['colcon_pkg']
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(prius_description) by extension 'colcon_pkg'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(prius_description) by extensions ['colcon_meta']
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(prius_description) by extension 'colcon_meta'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(prius_description) by extensions ['ros']
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(prius_description) by extension 'ros'
+[0.677s] DEBUG:colcon.colcon_core.package_identification:Package 'prius_description' with type 'ros.ament_cmake' and name 'prius_description'
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(prius_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(prius_msgs) by extension 'ignore'
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(prius_msgs) by extension 'ignore_ament_install'
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(prius_msgs) by extensions ['colcon_pkg']
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(prius_msgs) by extension 'colcon_pkg'
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(prius_msgs) by extensions ['colcon_meta']
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(prius_msgs) by extension 'colcon_meta'
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(prius_msgs) by extensions ['ros']
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(prius_msgs) by extension 'ros'
+[0.677s] DEBUG:colcon.colcon_core.package_identification:Package 'prius_msgs' with type 'ros.ament_cmake' and name 'prius_msgs'
+[0.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.736s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.736s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.755s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /sbel/gazebo-demo/install
+[0.764s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /chrono_ros_interfaces/install
+[0.774s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 291 installed packages in /opt/ros/humble
+[0.775s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'prius_description' build argument 'cmake_args' from command line to 'None'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'prius_description' build argument 'cmake_target' from command line to 'None'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'prius_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'prius_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'prius_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'prius_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'prius_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'prius_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'prius_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.839s] DEBUG:colcon.colcon_core.verb:Building package 'prius_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/sbel/gazebo-demo/build/prius_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/sbel/gazebo-demo/install/prius_description', 'merge_install': False, 'path': '/sbel/gazebo-demo/prius_description', 'symlink_install': False, 'test_result_base': None}
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'prius_msgs' build argument 'cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'prius_msgs' build argument 'cmake_target' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'prius_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'prius_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'prius_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'prius_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'prius_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'prius_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'prius_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.848s] DEBUG:colcon.colcon_core.verb:Building package 'prius_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/sbel/gazebo-demo/build/prius_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/sbel/gazebo-demo/install/prius_msgs', 'merge_install': False, 'path': '/sbel/gazebo-demo/prius_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'car_demo' build argument 'cmake_args' from command line to 'None'
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'car_demo' build argument 'cmake_target' from command line to 'None'
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'car_demo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'car_demo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'car_demo' build argument 'cmake_clean_first' from command line to 'False'
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'car_demo' build argument 'cmake_force_configure' from command line to 'False'
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'car_demo' build argument 'ament_cmake_args' from command line to 'None'
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'car_demo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.858s] Level 5:colcon.colcon_core.verb:set package 'car_demo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.858s] DEBUG:colcon.colcon_core.verb:Building package 'car_demo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/sbel/gazebo-demo/build/car_demo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/sbel/gazebo-demo/install/car_demo', 'merge_install': False, 'path': '/sbel/gazebo-demo/car_demo', 'symlink_install': False, 'test_result_base': None}
+[0.866s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.876s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.876s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/sbel/gazebo-demo/prius_description' with build type 'ament_cmake'
+[0.876s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/sbel/gazebo-demo/prius_description'
+[0.887s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.887s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.887s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.925s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/sbel/gazebo-demo/prius_msgs' with build type 'ament_cmake'
+[0.925s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/sbel/gazebo-demo/prius_msgs'
+[0.934s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.934s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/sbel/gazebo-demo/build/prius_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /sbel/gazebo-demo/build/prius_description -- -j16 -l16
+[0.977s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/sbel/gazebo-demo/build/prius_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /sbel/gazebo-demo/build/prius_msgs -- -j16 -l16
+[1.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/sbel/gazebo-demo/build/prius_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /sbel/gazebo-demo/build/prius_description -- -j16 -l16
+[1.031s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/sbel/gazebo-demo/build/prius_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /sbel/gazebo-demo/build/prius_description
+[1.040s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(prius_description)
+[1.040s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/sbel/gazebo-demo/build/prius_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /sbel/gazebo-demo/build/prius_description
+[1.051s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_description' for CMake module files
+[1.051s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_description' for CMake config files
+[1.052s] Level 1:colcon.colcon_core.shell:create_environment_hook('prius_description', 'cmake_prefix_path')
+[1.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/prius_description/share/prius_description/hook/cmake_prefix_path.ps1'
+[1.061s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/sbel/gazebo-demo/install/prius_description/share/prius_description/hook/cmake_prefix_path.dsv'
+[1.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/prius_description/share/prius_description/hook/cmake_prefix_path.sh'
+[1.062s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_description/bin'
+[1.062s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_description/lib/pkgconfig/prius_description.pc'
+[1.062s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_description/lib/python3.10/site-packages'
+[1.063s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_description/bin'
+[1.072s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/prius_description/share/prius_description/package.ps1'
+[1.072s] INFO:colcon.colcon_core.shell:Creating package descriptor '/sbel/gazebo-demo/install/prius_description/share/prius_description/package.dsv'
+[1.073s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/prius_description/share/prius_description/package.sh'
+[1.073s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/prius_description/share/prius_description/package.bash'
+[1.074s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/prius_description/share/prius_description/package.zsh'
+[1.074s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/sbel/gazebo-demo/install/prius_description/share/colcon-core/packages/prius_description)
+[1.104s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(prius_description)
+[1.113s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_description' for CMake module files
+[1.113s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_description' for CMake config files
+[1.113s] Level 1:colcon.colcon_core.shell:create_environment_hook('prius_description', 'cmake_prefix_path')
+[1.123s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/prius_description/share/prius_description/hook/cmake_prefix_path.ps1'
+[1.123s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/sbel/gazebo-demo/install/prius_description/share/prius_description/hook/cmake_prefix_path.dsv'
+[1.123s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/prius_description/share/prius_description/hook/cmake_prefix_path.sh'
+[1.124s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_description/bin'
+[1.124s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_description/lib/pkgconfig/prius_description.pc'
+[1.124s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_description/lib/python3.10/site-packages'
+[1.124s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_description/bin'
+[1.133s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/prius_description/share/prius_description/package.ps1'
+[1.133s] INFO:colcon.colcon_core.shell:Creating package descriptor '/sbel/gazebo-demo/install/prius_description/share/prius_description/package.dsv'
+[1.133s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/prius_description/share/prius_description/package.sh'
+[1.134s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/prius_description/share/prius_description/package.bash'
+[1.134s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/prius_description/share/prius_description/package.zsh'
+[1.134s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/sbel/gazebo-demo/install/prius_description/share/colcon-core/packages/prius_description)
+[1.478s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/sbel/gazebo-demo/build/prius_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /sbel/gazebo-demo/build/prius_msgs -- -j16 -l16
+[1.538s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/sbel/gazebo-demo/build/prius_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /sbel/gazebo-demo/build/prius_msgs
+[1.581s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(prius_msgs)
+[1.581s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/sbel/gazebo-demo/build/prius_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /sbel/gazebo-demo/build/prius_msgs
+[1.591s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_msgs' for CMake module files
+[1.591s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_msgs' for CMake config files
+[1.592s] Level 1:colcon.colcon_core.shell:create_environment_hook('prius_msgs', 'cmake_prefix_path')
+[1.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/hook/cmake_prefix_path.ps1'
+[1.601s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/hook/cmake_prefix_path.dsv'
+[1.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/hook/cmake_prefix_path.sh'
+[1.601s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_msgs/lib'
+[1.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('prius_msgs', 'ld_library_path_lib')
+[1.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/hook/ld_library_path_lib.ps1'
+[1.611s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/hook/ld_library_path_lib.dsv'
+[1.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/hook/ld_library_path_lib.sh'
+[1.612s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_msgs/bin'
+[1.612s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_msgs/lib/pkgconfig/prius_msgs.pc'
+[1.612s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_msgs/lib/python3.10/site-packages'
+[1.612s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_msgs/bin'
+[1.621s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/package.ps1'
+[1.621s] INFO:colcon.colcon_core.shell:Creating package descriptor '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/package.dsv'
+[1.622s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/package.sh'
+[1.622s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/package.bash'
+[1.622s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/package.zsh'
+[1.622s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/sbel/gazebo-demo/install/prius_msgs/share/colcon-core/packages/prius_msgs)
+[1.694s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(prius_msgs)
+[1.703s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_msgs' for CMake module files
+[1.704s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_msgs' for CMake config files
+[1.704s] Level 1:colcon.colcon_core.shell:create_environment_hook('prius_msgs', 'cmake_prefix_path')
+[1.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/hook/cmake_prefix_path.ps1'
+[1.713s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/hook/cmake_prefix_path.dsv'
+[1.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/hook/cmake_prefix_path.sh'
+[1.714s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_msgs/lib'
+[1.714s] Level 1:colcon.colcon_core.shell:create_environment_hook('prius_msgs', 'ld_library_path_lib')
+[1.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/hook/ld_library_path_lib.ps1'
+[1.723s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/hook/ld_library_path_lib.dsv'
+[1.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/hook/ld_library_path_lib.sh'
+[1.724s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_msgs/bin'
+[1.724s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_msgs/lib/pkgconfig/prius_msgs.pc'
+[1.724s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_msgs/lib/python3.10/site-packages'
+[1.724s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/prius_msgs/bin'
+[1.740s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/package.ps1'
+[1.741s] INFO:colcon.colcon_core.shell:Creating package descriptor '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/package.dsv'
+[1.741s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/package.sh'
+[1.741s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/package.bash'
+[1.742s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/package.zsh'
+[1.742s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/sbel/gazebo-demo/install/prius_msgs/share/colcon-core/packages/prius_msgs)
+[1.742s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/sbel/gazebo-demo/car_demo' with build type 'ament_cmake'
+[1.742s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/sbel/gazebo-demo/car_demo'
+[1.752s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.752s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.796s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/sbel/gazebo-demo/build/car_demo': CMAKE_PREFIX_PATH=/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/sbel/gazebo-demo/install/car_demo:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble GAZEBO_MODEL_PATH=/sbel/gazebo-demo/install/prius_description/share/prius_description/models:${GAZEBO_MODEL_PATH} LD_LIBRARY_PATH=/sbel/gazebo-demo/install/prius_msgs/lib:/sbel/gazebo-demo/install/car_demo/lib:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /sbel/gazebo-demo/build/car_demo -- -j16 -l16
+[2.158s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/sbel/gazebo-demo/build/car_demo' returned '0': CMAKE_PREFIX_PATH=/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/sbel/gazebo-demo/install/car_demo:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble GAZEBO_MODEL_PATH=/sbel/gazebo-demo/install/prius_description/share/prius_description/models:${GAZEBO_MODEL_PATH} LD_LIBRARY_PATH=/sbel/gazebo-demo/install/prius_msgs/lib:/sbel/gazebo-demo/install/car_demo/lib:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /sbel/gazebo-demo/build/car_demo -- -j16 -l16
+[2.186s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/sbel/gazebo-demo/build/car_demo': CMAKE_PREFIX_PATH=/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/sbel/gazebo-demo/install/car_demo:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble GAZEBO_MODEL_PATH=/sbel/gazebo-demo/install/prius_description/share/prius_description/models:${GAZEBO_MODEL_PATH} LD_LIBRARY_PATH=/sbel/gazebo-demo/install/prius_msgs/lib:/sbel/gazebo-demo/install/car_demo/lib:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /sbel/gazebo-demo/build/car_demo
+[2.230s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(car_demo)
+[2.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/sbel/gazebo-demo/build/car_demo' returned '0': CMAKE_PREFIX_PATH=/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/sbel/gazebo-demo/install/car_demo:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble GAZEBO_MODEL_PATH=/sbel/gazebo-demo/install/prius_description/share/prius_description/models:${GAZEBO_MODEL_PATH} LD_LIBRARY_PATH=/sbel/gazebo-demo/install/prius_msgs/lib:/sbel/gazebo-demo/install/car_demo/lib:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /sbel/gazebo-demo/build/car_demo
+[2.242s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/car_demo' for CMake module files
+[2.242s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/car_demo' for CMake config files
+[2.243s] Level 1:colcon.colcon_core.shell:create_environment_hook('car_demo', 'cmake_prefix_path')
+[2.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/car_demo/share/car_demo/hook/cmake_prefix_path.ps1'
+[2.252s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/sbel/gazebo-demo/install/car_demo/share/car_demo/hook/cmake_prefix_path.dsv'
+[2.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/car_demo/share/car_demo/hook/cmake_prefix_path.sh'
+[2.253s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/car_demo/lib'
+[2.253s] Level 1:colcon.colcon_core.shell:create_environment_hook('car_demo', 'ld_library_path_lib')
+[2.262s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/car_demo/share/car_demo/hook/ld_library_path_lib.ps1'
+[2.262s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/sbel/gazebo-demo/install/car_demo/share/car_demo/hook/ld_library_path_lib.dsv'
+[2.262s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/car_demo/share/car_demo/hook/ld_library_path_lib.sh'
+[2.262s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/car_demo/bin'
+[2.262s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/car_demo/lib/pkgconfig/car_demo.pc'
+[2.263s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/car_demo/lib/python3.10/site-packages'
+[2.263s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/car_demo/bin'
+[2.272s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/car_demo/share/car_demo/package.ps1'
+[2.272s] INFO:colcon.colcon_core.shell:Creating package descriptor '/sbel/gazebo-demo/install/car_demo/share/car_demo/package.dsv'
+[2.272s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/car_demo/share/car_demo/package.sh'
+[2.273s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/car_demo/share/car_demo/package.bash'
+[2.273s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/car_demo/share/car_demo/package.zsh'
+[2.273s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/sbel/gazebo-demo/install/car_demo/share/colcon-core/packages/car_demo)
+[2.312s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(car_demo)
+[2.321s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/car_demo' for CMake module files
+[2.322s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/car_demo' for CMake config files
+[2.322s] Level 1:colcon.colcon_core.shell:create_environment_hook('car_demo', 'cmake_prefix_path')
+[2.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/car_demo/share/car_demo/hook/cmake_prefix_path.ps1'
+[2.331s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/sbel/gazebo-demo/install/car_demo/share/car_demo/hook/cmake_prefix_path.dsv'
+[2.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/car_demo/share/car_demo/hook/cmake_prefix_path.sh'
+[2.332s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/car_demo/lib'
+[2.332s] Level 1:colcon.colcon_core.shell:create_environment_hook('car_demo', 'ld_library_path_lib')
+[2.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/car_demo/share/car_demo/hook/ld_library_path_lib.ps1'
+[2.341s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/sbel/gazebo-demo/install/car_demo/share/car_demo/hook/ld_library_path_lib.dsv'
+[2.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/sbel/gazebo-demo/install/car_demo/share/car_demo/hook/ld_library_path_lib.sh'
+[2.341s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/car_demo/bin'
+[2.341s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/car_demo/lib/pkgconfig/car_demo.pc'
+[2.341s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/car_demo/lib/python3.10/site-packages'
+[2.342s] Level 1:colcon.colcon_core.environment:checking '/sbel/gazebo-demo/install/car_demo/bin'
+[2.350s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/car_demo/share/car_demo/package.ps1'
+[2.351s] INFO:colcon.colcon_core.shell:Creating package descriptor '/sbel/gazebo-demo/install/car_demo/share/car_demo/package.dsv'
+[2.351s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/car_demo/share/car_demo/package.sh'
+[2.351s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/car_demo/share/car_demo/package.bash'
+[2.352s] INFO:colcon.colcon_core.shell:Creating package script '/sbel/gazebo-demo/install/car_demo/share/car_demo/package.zsh'
+[2.352s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/sbel/gazebo-demo/install/car_demo/share/colcon-core/packages/car_demo)
+[2.352s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.352s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.352s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.352s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.365s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.365s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.365s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.373s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.383s] INFO:colcon.colcon_core.shell:Creating prefix script '/sbel/gazebo-demo/install/local_setup.ps1'
+[2.383s] INFO:colcon.colcon_core.shell:Creating prefix util module '/sbel/gazebo-demo/install/_local_setup_util_ps1.py'
+[2.384s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/sbel/gazebo-demo/install/setup.ps1'
+[2.394s] INFO:colcon.colcon_core.shell:Creating prefix script '/sbel/gazebo-demo/install/local_setup.sh'
+[2.394s] INFO:colcon.colcon_core.shell:Creating prefix util module '/sbel/gazebo-demo/install/_local_setup_util_sh.py'
+[2.394s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/sbel/gazebo-demo/install/setup.sh'
+[2.404s] INFO:colcon.colcon_core.shell:Creating prefix script '/sbel/gazebo-demo/install/local_setup.bash'
+[2.404s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/sbel/gazebo-demo/install/setup.bash'
+[2.414s] INFO:colcon.colcon_core.shell:Creating prefix script '/sbel/gazebo-demo/install/local_setup.zsh'
+[2.414s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/sbel/gazebo-demo/install/setup.zsh'

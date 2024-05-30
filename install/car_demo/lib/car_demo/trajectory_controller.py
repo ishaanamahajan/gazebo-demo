@@ -2,15 +2,15 @@
 
 import rclpy
 from rclpy.node import Node
-from ackermann_msgs.msg import AckermannDriveStamped
+from prius_msgs.msg import Control
 import math
 
 class TrajectoryController(Node):
     def __init__(self):
         super().__init__('trajectory_controller')
         
-        # Create a publisher to the /car_demo/ackermann_cmd topic
-        self.pub = self.create_publisher(AckermannDriveStamped, '/car_demo/ackermann_cmd', 10)
+        # Create a publisher to the /prius/control topic
+        self.pub = self.create_publisher(Control, '/prius/control', 10)
         
         # Declare and get parameters
         self.declare_parameter('mode', 'straight')
@@ -24,28 +24,27 @@ class TrajectoryController(Node):
 
         # Variables for trajectory timing
         self.start_time = self.get_clock().now().seconds_nanoseconds()[0]
+        self.end_time = self.start_time + self.duration
 
-    def publish_command(self, speed, steering_angle):
-        drive_msg = AckermannDriveStamped()
-        drive_msg.header.stamp = self.get_clock().now().to_msg()
-        drive_msg.drive.speed = speed
-        drive_msg.drive.steering_angle = steering_angle
-        self.pub.publish(drive_msg)
+    def publish_command(self, throttle, steering):
+        control_msg = Control()
+        control_msg.throttle = throttle
+        control_msg.steer = steering
+        control_msg.brake = 0.0
+        control_msg.shift_gears = Control.NO_COMMAND
+        self.pub.publish(control_msg)
 
     def straight_line(self):
-        end_time = self.start_time + self.duration
-        while self.get_clock().now().seconds_nanoseconds()[0] < end_time:
+        while self.get_clock().now().seconds_nanoseconds()[0] < self.end_time:
             self.publish_command(1.0, 0.0)
 
     def circle(self):
-        end_time = self.start_time + self.duration
-        while self.get_clock().now().seconds_nanoseconds()[0] < end_time:
+        while self.get_clock().now().seconds_nanoseconds()[0] < self.end_time:
             self.publish_command(1.0, 0.5)  # Adjust the steering angle for the circle
 
     def half_sine(self):
-        end_time = self.start_time + self.duration
-        while self.get_clock().now().seconds_nanoseconds()[0] < end_time:
-            elapsed = self.get_clock().now().seconds_nanoseconds()[0]
+        while self.get_clock().now().seconds_nanoseconds()[0] < self.end_time:
+            elapsed = self.get_clock().now().seconds_nanoseconds()[0] - self.start_time
             steering_angle = math.sin(elapsed) * 0.5  # Adjust the amplitude for desired effect
             self.publish_command(1.0, steering_angle)
 
