@@ -3,7 +3,6 @@
 import rclpy
 from rclpy.node import Node
 from prius_msgs.msg import Control
-import math
 import time
 
 class TrajectoryController(Node):
@@ -33,16 +32,18 @@ class TrajectoryController(Node):
         self.start_time = self.get_clock().now().seconds_nanoseconds()[0]
         self.end_time = self.start_time + self.duration
 
-        # Half sine phase durations (calculated based on required behavior)
-        self.half_sine_phase_duration = 5  # 5 seconds for each phase: left, straight, right
+        # Half sine phase durations
+        self.initial_straight_duration = 5  # seconds for initial straight motion
+        self.turn_duration = 6  # seconds for each half of the semi-circle
 
     def publish_command(self, throttle, steering):
         control_msg = Control()
         control_msg.throttle = throttle
         control_msg.steer = steering
         control_msg.brake = 0.0
-        control_msg.shift_gears = Control.NO_COMMAND
+        control_msg.shift_gears = Control.FORWARD
         self.pub.publish(control_msg)
+        self.get_logger().info(f"Published command: throttle={throttle}, steer={steering}")
 
     def straight_line(self):
         while self.get_clock().now().seconds_nanoseconds()[0] < self.end_time:
@@ -55,23 +56,26 @@ class TrajectoryController(Node):
             time.sleep(0.1)  # Sleep for a short duration to allow continuous publishing
 
     def half_sine(self):
-        phase_start_time = self.get_clock().now().seconds_nanoseconds()[0]
-        
-        # Phase 1: Steer left
-        while self.get_clock().now().seconds_nanoseconds()[0] < phase_start_time + self.half_sine_phase_duration:
-            self.publish_command(self.throttle_value, 0.5)  # Adjust the steering angle for left turn
+        current_time = self.get_clock().now().seconds_nanoseconds()[0]
+
+        # Initial straight motion
+        phase_end_time = current_time + self.initial_straight_duration
+        while self.get_clock().now().seconds_nanoseconds()[0] < phase_end_time:
+            self.publish_command(self.throttle_value, 0.0)
             time.sleep(0.1)
-        
-        # Phase 2: Go straight
-        phase_start_time += self.half_sine_phase_duration
-        while self.get_clock().now().seconds_nanoseconds()[0] < phase_start_time + self.half_sine_phase_duration:
-            self.publish_command(self.throttle_value, 0.0)  # Straight
+
+        # Phase 1: Steer left to create the first half of the semi-circle
+        current_time = self.get_clock().now().seconds_nanoseconds()[0]
+        phase_end_time = current_time + self.turn_duration
+        while self.get_clock().now().seconds_nanoseconds()[0] < phase_end_time:
+            self.publish_command(self.throttle_value, 0.3)  # Adjust the steering angle for left turn
             time.sleep(0.1)
-        
-        # Phase 3: Steer right
-        phase_start_time += self.half_sine_phase_duration
-        while self.get_clock().now().seconds_nanoseconds()[0] < phase_start_time + self.half_sine_phase_duration:
-            self.publish_command(self.throttle_value, -0.5)  # Adjust the steering angle for right turn
+
+        # Phase 2: Steer right to create the second half of the semi-circle
+        current_time = self.get_clock().now().seconds_nanoseconds()[0]
+        phase_end_time = current_time + self.turn_duration
+        while self.get_clock().now().seconds_nanoseconds()[0] < phase_end_time:
+            self.publish_command(self.throttle_value, -0.3)  # Adjust the steering angle for right turn
             time.sleep(0.1)
 
     def run(self):
