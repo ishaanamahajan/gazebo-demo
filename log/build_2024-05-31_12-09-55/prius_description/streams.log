@@ -1,0 +1,55 @@
+[0.162s] Invoking command in '/sbel/gazebo-demo/build/prius_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /sbel/gazebo-demo/prius_description -DCMAKE_INSTALL_PREFIX=/sbel/gazebo-demo/install/prius_description
+[0.255s] -- The C compiler identification is GNU 11.4.0
+[0.332s] -- The CXX compiler identification is GNU 11.4.0
+[0.344s] -- Detecting C compiler ABI info
+[0.458s] -- Detecting C compiler ABI info - done
+[0.467s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.467s] -- Detecting C compile features
+[0.468s] -- Detecting C compile features - done
+[0.471s] -- Detecting CXX compiler ABI info
+[0.588s] -- Detecting CXX compiler ABI info - done
+[0.596s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.596s] -- Detecting CXX compile features
+[0.597s] -- Detecting CXX compile features - done
+[0.601s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.840s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.007s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[1.095s] -- Configuring done
+[1.099s] -- Generating done
+[1.101s] -- Build files have been written to: /sbel/gazebo-demo/build/prius_description
+[1.110s] Invoked command in '/sbel/gazebo-demo/build/prius_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /sbel/gazebo-demo/prius_description -DCMAKE_INSTALL_PREFIX=/sbel/gazebo-demo/install/prius_description
+[1.110s] Invoking command in '/sbel/gazebo-demo/build/prius_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /sbel/gazebo-demo/build/prius_description -- -j16 -l16
+[1.173s] Invoked command in '/sbel/gazebo-demo/build/prius_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /sbel/gazebo-demo/build/prius_description -- -j16 -l16
+[1.220s] Invoking command in '/sbel/gazebo-demo/build/prius_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /sbel/gazebo-demo/build/prius_description
+[1.236s] -- Install configuration: ""
+[1.238s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/environment/gazebo_envs.sh
+[1.241s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes
+[1.241s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/wheel.obj
+[1.241s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/hybrid_body.mtl
+[1.242s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/Hybrid.png
+[1.243s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/steering_wheel.mtl
+[1.244s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/model.config
+[1.245s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/Wheels3.png
+[1.246s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/Hybrid_Interior.png
+[1.251s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/steering_wheel.obj
+[1.251s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/wheel.mtl
+[1.252s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/meshes/hybrid_body.obj
+[1.252s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/urdf
+[1.253s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/urdf/prius.urdf
+[1.253s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/model.config
+[1.254s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/ament_index/resource_index/package_run_dependencies/prius_description
+[1.254s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/ament_index/resource_index/parent_prefix_path/prius_description
+[1.255s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/environment/ament_prefix_path.sh
+[1.255s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/environment/ament_prefix_path.dsv
+[1.255s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/environment/path.sh
+[1.256s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/environment/path.dsv
+[1.256s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/local_setup.bash
+[1.256s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/local_setup.sh
+[1.257s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/local_setup.zsh
+[1.257s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/local_setup.dsv
+[1.257s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/package.dsv
+[1.258s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/ament_index/resource_index/packages/prius_description
+[1.258s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/cmake/prius_descriptionConfig.cmake
+[1.258s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/cmake/prius_descriptionConfig-version.cmake
+[1.258s] -- Installing: /sbel/gazebo-demo/install/prius_description/share/prius_description/package.xml
+[1.261s] Invoked command in '/sbel/gazebo-demo/build/prius_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /sbel/gazebo-demo/build/prius_description

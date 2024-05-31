@@ -2,15 +2,16 @@
 
 import rclpy
 from rclpy.node import Node
-from prius_msgs.msg import Control
+from prius_msgs.msg import Control, Speed
 import time
 
 class TrajectoryController(Node):
     def __init__(self):
         super().__init__('trajectory_controller')
         
-        # Create a publisher to the /prius/control topic
+        # Create publishers and subscribers
         self.pub = self.create_publisher(Control, '/prius/control', 10)
+        self.sub = self.create_subscription(Speed, '/prius/speed', self.speed_callback, 10)
         
         # Declare and get parameters
         self.declare_parameter('mode', 'straight')
@@ -21,8 +22,11 @@ class TrajectoryController(Node):
         # Desired velocity
         self.desired_velocity = 2.0  # m/s
         
-        # Throttle value for achieving the desired velocity (needs fine-tuning)
-        self.throttle_value = 0.8  # Adjust this value based on your vehicle model
+        # Throttle value for achieving the desired velocity (initial guess, will be adjusted dynamically)
+        self.throttle_value = 0.5
+        
+        # Current speed of the vehicle
+        self.current_speed = 0.0
         
         # Set the loop rate
         self.timer_period = 0.1  # seconds
@@ -33,8 +37,21 @@ class TrajectoryController(Node):
         self.end_time = self.start_time + self.duration
 
         # Half sine phase durations
-        self.initial_straight_duration = 5  # seconds for initial straight motion
+        self.initial_straight_duration = 2  # seconds for initial straight motion
         self.turn_duration = 6  # seconds for each half of the semi-circle
+
+    def speed_callback(self, msg):
+        self.current_speed = msg.speed
+        self.adjust_throttle()
+
+    def adjust_throttle(self):
+        # Adjust the throttle to maintain the desired velocity
+        if self.current_speed < self.desired_velocity:
+            self.throttle_value += 0.01  # Increase throttle
+        elif self.current_speed > self.desired_velocity:
+            self.throttle_value -= 0.01  # Decrease throttle
+        self.throttle_value = max(0.0, min(self.throttle_value, 1.0))  # Ensure throttle is within [0, 1]
+        self.get_logger().info(f"Adjusted throttle: {self.throttle_value}")
 
     def publish_command(self, throttle, steering):
         control_msg = Control()
@@ -69,11 +86,6 @@ class TrajectoryController(Node):
         phase_end_time = current_time + self.turn_duration
         while self.get_clock().now().seconds_nanoseconds()[0] < phase_end_time:
             self.publish_command(self.throttle_value, 0.3)  # Adjust the steering angle for left turn
-            time.sleep(0.1)
-
-        phase_end_time = current_time + self.initial_straight_duration
-        while self.get_clock().now().seconds_nanoseconds()[0] < phase_end_time:
-            self.publish_command(self.throttle_value, 0.0)
             time.sleep(0.1)
 
         # Phase 2: Steer right to create the second half of the semi-circle

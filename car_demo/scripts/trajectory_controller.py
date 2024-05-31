@@ -22,7 +22,7 @@ class TrajectoryController(Node):
         self.desired_velocity = 2.0  # m/s
         
         # Throttle value for achieving the desired velocity (needs fine-tuning)
-        self.throttle_value = 0.8  # Adjust this value based on your vehicle model
+        self.throttle_value = 2.0  # Adjust this value based on your vehicle model
         
         # Set the loop rate
         self.timer_period = 0.1  # seconds

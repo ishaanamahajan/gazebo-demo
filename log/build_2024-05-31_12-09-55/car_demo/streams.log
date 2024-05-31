@@ -1,0 +1,390 @@
+[0.082s] Invoking command in '/sbel/gazebo-demo/build/car_demo': CMAKE_PREFIX_PATH=/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/sbel/gazebo-demo/install/car_demo:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble GAZEBO_MODEL_PATH=/sbel/gazebo-demo/install/prius_description/share/prius_description/models:${GAZEBO_MODEL_PATH} LD_LIBRARY_PATH=/sbel/gazebo-demo/install/prius_msgs/lib:/sbel/gazebo-demo/install/car_demo/lib:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /sbel/gazebo-demo/car_demo -DCMAKE_INSTALL_PREFIX=/sbel/gazebo-demo/install/car_demo
+[0.156s] -- The C compiler identification is GNU 11.4.0
+[0.221s] -- The CXX compiler identification is GNU 11.4.0
+[0.233s] -- Detecting C compiler ABI info
+[0.323s] -- Detecting C compiler ABI info - done
+[0.331s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.331s] -- Detecting C compile features
+[0.332s] -- Detecting C compile features - done
+[0.335s] -- Detecting CXX compiler ABI info
+[0.450s] -- Detecting CXX compiler ABI info - done
+[0.455s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.455s] -- Detecting CXX compile features
+[0.456s] -- Detecting CXX compile features - done
+[0.459s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.662s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.785s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[0.858s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.867s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.879s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.897s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.922s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.042s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.053s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.242s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.295s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.387s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.412s] -- Looking for pthread.h
+[1.525s] -- Looking for pthread.h - found
+[1.525s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.637s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.638s] -- Found Threads: TRUE  
+[1.827s] -- Found rclpy: 3.3.10 (/opt/ros/humble/share/rclpy/cmake)
+[1.830s] -- Found gazebo_dev: 3.7.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[1.841s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.842s] -- Checking for module 'bullet>=2.82'
+[1.867s] --   Found bullet, version 3.05
+[2.051s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[2.134s] -- Found assimp: /usr/include (found version "5.2.0") 
+[2.172s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[2.242s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[2.257s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[2.267s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.283s] -- Searching for dependencies of ignition-math6
+[2.286s] -- Looking for OGRE...
+[2.286s] -- OGRE_PREFIX_WATCH changed.
+[2.293s] -- Checking for module 'OGRE'
+[2.312s] --   Found OGRE, version 1.9.0
+[2.369s] -- Found Ogre Ghadamon (1.9.0)
+[2.381s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[2.390s] -- Looking for OGRE_Paging...
+[2.398s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[2.398s] -- Looking for OGRE_Terrain...
+[2.403s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[2.403s] -- Looking for OGRE_Property...
+[2.411s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[2.411s] -- Looking for OGRE_RTShaderSystem...
+[2.416s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[2.416s] -- Looking for OGRE_Volume...
+[2.426s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[2.426s] -- Looking for OGRE_Overlay...
+[2.431s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[2.563s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.573s] -- Looking for ignition-transport8 -- found version 8.2.1
+[2.573s] -- Searching for dependencies of ignition-transport8
+[2.612s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[2.637s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.646s] -- Checking for module 'libzmq >= 4'
+[2.672s] --   Found libzmq , version 4.3.4
+[2.734s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.740s] -- Checking for module 'uuid'
+[2.762s] --   Found uuid, version 2.37.2
+[2.813s] -- Found UUID: TRUE  
+[2.818s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.819s] -- Searching for dependencies of ignition-msgs5
+[2.855s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.868s] -- Checking for module 'tinyxml2'
+[2.891s] --   Found tinyxml2, version 9.0.0
+[2.948s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.952s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.953s] -- Searching for dependencies of ignition-common3
+[2.955s] -- Looking for dlfcn.h - found
+[2.957s] -- Looking for libdl - found
+[2.959s] -- Found DL: TRUE  
+[2.974s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[2.975s] -- Searching for <ignition-common3> component [graphics]
+[2.980s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[2.980s] -- Searching for dependencies of ignition-common3-graphics
+[2.981s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.987s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[2.988s] -- Searching for dependencies of ignition-fuel_tools4
+[3.119s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[3.137s] -- Checking for module 'jsoncpp'
+[3.157s] --   Found jsoncpp, version 1.9.5
+[3.211s] -- Found JSONCPP: TRUE  
+[3.222s] -- Checking for module 'libzip'
+[3.245s] --   Found libzip, version 1.7.3
+[3.298s] -- Found ZIP: TRUE  
+[3.299s] -- Looking for ignition-common3 -- found version 3.14.0
+[3.299s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.299s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.308s] -- Gazebo version: 11.10
+[3.309s] -- Checking for module 'tbb'
+[3.332s] --   Found tbb, version 2021.5.0
+[3.390s] -- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[3.689s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[3.697s] -- Found prius_msgs: 0.0.1 (/sbel/gazebo-demo/install/prius_msgs/share/prius_msgs/cmake)
+[3.756s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.756s] -- Found prius_description: 0.0.1 (/sbel/gazebo-demo/install/prius_description/share/prius_description/cmake)
+[3.872s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.947s] -- Found ament_cmake_gtest: 1.3.5 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[3.952s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[3.982s] -- Configuring done
+[4.052s] -- Generating done
+[4.056s] -- Build files have been written to: /sbel/gazebo-demo/build/car_demo
+[4.081s] Invoked command in '/sbel/gazebo-demo/build/car_demo' returned '0': CMAKE_PREFIX_PATH=/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/sbel/gazebo-demo/install/car_demo:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble GAZEBO_MODEL_PATH=/sbel/gazebo-demo/install/prius_description/share/prius_description/models:${GAZEBO_MODEL_PATH} LD_LIBRARY_PATH=/sbel/gazebo-demo/install/prius_msgs/lib:/sbel/gazebo-demo/install/car_demo/lib:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /sbel/gazebo-demo/car_demo -DCMAKE_INSTALL_PREFIX=/sbel/gazebo-demo/install/car_demo
+[4.082s] Invoking command in '/sbel/gazebo-demo/build/car_demo': CMAKE_PREFIX_PATH=/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/sbel/gazebo-demo/install/car_demo:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble GAZEBO_MODEL_PATH=/sbel/gazebo-demo/install/prius_description/share/prius_description/models:${GAZEBO_MODEL_PATH} LD_LIBRARY_PATH=/sbel/gazebo-demo/install/prius_msgs/lib:/sbel/gazebo-demo/install/car_demo/lib:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /sbel/gazebo-demo/build/car_demo -- -j16 -l16
+[4.162s] [ 12%] [32mBuilding CXX object CMakeFiles/PriusHybridPlugin.dir/plugins/PriusHybridPlugin.cc.o[0m
+[30.339s] [ 25%] [32m[1mLinking CXX shared library libPriusHybridPlugin.so[0m
+[31.617s] [ 25%] Built target PriusHybridPlugin
+[31.644s] [ 37%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[34.530s] [ 50%] [32m[1mLinking CXX static library libgtest.a[0m
+[34.670s] [ 50%] Built target gtest
+[34.699s] [ 62%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[35.366s] [ 75%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[35.458s] [ 75%] Built target gtest_main
+[35.499s] [ 75%] Built target ament_cmake_python_copy_car_demo
+[35.527s] [ 87%] [32mBuilding CXX object CMakeFiles/PriusHybridPluginTest.dir/plugins/PriusHybridPlugin.cc.o[0m
+[60.038s] [100%] [32m[1mLinking CXX executable PriusHybridPluginTest[0m
+[62.016s] [100%] Built target PriusHybridPluginTest
+[62.271s] running egg_info
+[62.271s] creating car_demo.egg-info
+[62.272s] writing car_demo.egg-info/PKG-INFO
+[62.272s] writing dependency_links to car_demo.egg-info/dependency_links.txt
+[62.272s] writing top-level names to car_demo.egg-info/top_level.txt
+[62.273s] writing manifest file 'car_demo.egg-info/SOURCES.txt'
+[62.275s] reading manifest file 'car_demo.egg-info/SOURCES.txt'
+[62.275s] writing manifest file 'car_demo.egg-info/SOURCES.txt'
+[62.310s] [100%] Built target ament_cmake_python_build_car_demo_egg
+[62.333s] Invoked command in '/sbel/gazebo-demo/build/car_demo' returned '0': CMAKE_PREFIX_PATH=/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/sbel/gazebo-demo/install/car_demo:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble GAZEBO_MODEL_PATH=/sbel/gazebo-demo/install/prius_description/share/prius_description/models:${GAZEBO_MODEL_PATH} LD_LIBRARY_PATH=/sbel/gazebo-demo/install/prius_msgs/lib:/sbel/gazebo-demo/install/car_demo/lib:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /sbel/gazebo-demo/build/car_demo -- -j16 -l16
+[62.377s] Invoking command in '/sbel/gazebo-demo/build/car_demo': CMAKE_PREFIX_PATH=/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/sbel/gazebo-demo/install/car_demo:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble GAZEBO_MODEL_PATH=/sbel/gazebo-demo/install/prius_description/share/prius_description/models:${GAZEBO_MODEL_PATH} LD_LIBRARY_PATH=/sbel/gazebo-demo/install/prius_msgs/lib:/sbel/gazebo-demo/install/car_demo/lib:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /sbel/gazebo-demo/build/car_demo
+[62.387s] -- Install configuration: ""
+[62.387s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/library_path.sh
+[62.388s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/library_path.dsv
+[62.388s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/gazebo_plugins.sh
+[62.388s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/gazebo_plugins.dsv
+[62.388s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/pythonpath.sh
+[62.389s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/pythonpath.dsv
+[62.389s] -- Installing: /sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info
+[62.389s] -- Installing: /sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/dependency_links.txt
+[62.389s] -- Installing: /sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/PKG-INFO
+[62.390s] -- Installing: /sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/SOURCES.txt
+[62.390s] -- Installing: /sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo-0.0.1-py3.10.egg-info/top_level.txt
+[62.390s] -- Installing: /sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo
+[62.390s] -- Installing: /sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo/__init__.py
+[62.426s] Listing '/sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo'...
+[62.426s] Compiling '/sbel/gazebo-demo/install/car_demo/local/lib/python3.10/dist-packages/car_demo/__init__.py'...
+[62.432s] -- Installing: /sbel/gazebo-demo/install/car_demo/lib/car_demo/trajectory_controller.py
+[62.432s] -- Installing: /sbel/gazebo-demo/install/car_demo/lib/car_demo/prius_teleop_keyboard.py
+[62.433s] -- Installing: /sbel/gazebo-demo/install/car_demo/lib/car_demo/joystick_translator.py
+[62.433s] -- Installing: /sbel/gazebo-demo/install/car_demo/lib/libPriusHybridPlugin.so
+[62.450s] -- Set runtime path of "/sbel/gazebo-demo/install/car_demo/lib/libPriusHybridPlugin.so" to ""
+[62.450s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/ament_index/resource_index/package_run_dependencies/car_demo
+[62.451s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/ament_index/resource_index/parent_prefix_path/car_demo
+[62.451s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/ament_prefix_path.sh
+[62.452s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/ament_prefix_path.dsv
+[62.452s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/path.sh
+[62.452s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/environment/path.dsv
+[62.453s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/local_setup.bash
+[62.453s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/local_setup.sh
+[62.454s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/local_setup.zsh
+[62.454s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/local_setup.dsv
+[62.454s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/package.dsv
+[62.455s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/ament_index/resource_index/packages/car_demo
+[62.455s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/cmake/ament_cmake_export_libraries-extras.cmake
+[62.456s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/cmake/ament_cmake_export_include_directories-extras.cmake
+[62.456s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/cmake/ament_cmake_export_dependencies-extras.cmake
+[62.456s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/cmake/car_demoConfig.cmake
+[62.457s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/cmake/car_demoConfig-version.cmake
+[62.457s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/package.xml
+[62.457s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/launch
+[62.458s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/launch/demo.launch.py
+[62.458s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/launch/spawn_prius.launch.py
+[62.458s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models
+[62.459s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign
+[62.459s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/model-1_4.sdf
+[62.459s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/meshes
+[62.459s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/meshes/speed_limit_sign.dae
+[62.460s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/model-1_3.sdf
+[62.460s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials
+[62.460s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures
+[62.460s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_90.png
+[62.461s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_30.png
+[62.462s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_120.png
+[62.462s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_40.png
+[62.463s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_16.png
+[62.463s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_50.png
+[62.464s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_110.png
+[62.465s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_130.png
+[62.465s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/StopSign_Diffuse.png
+[62.466s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_60.png
+[62.467s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_100.png
+[62.468s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_80.png
+[62.468s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_70.png
+[62.469s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/StopSign_Spec.png
+[62.469s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/materials/textures/Speed_Spec.png
+[62.470s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/model.config
+[62.470s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/speed_limit_sign/model.sdf
+[62.470s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall
+[62.470s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/model-1_4.sdf
+[62.470s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/model-1_3.sdf
+[62.470s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/materials
+[62.471s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/materials/scripts
+[62.471s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/materials/scripts/grey_wall.material
+[62.471s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/materials/textures
+[62.471s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/materials/textures/grey_wall.png
+[62.477s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/model.config
+[62.478s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/grey_wall/model.sdf
+[62.478s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone
+[62.478s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/model-1_4.sdf
+[62.478s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/meshes
+[62.478s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/meshes/construction_cone.dae
+[62.479s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/model-1_3.sdf
+[62.479s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/materials
+[62.479s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/materials/textures
+[62.479s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/materials/textures/Construction_Cone_Diffuse.png
+[62.481s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/model.config
+[62.481s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/construction_cone/model.sdf
+[62.482s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3
+[62.482s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/model-1_4.sdf
+[62.482s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/meshes
+[62.483s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/meshes/house_3.dae
+[62.483s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/model-1_3.sdf
+[62.484s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/materials
+[62.484s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/materials/scripts
+[62.484s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/materials/scripts/house_3.material
+[62.484s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/materials/textures
+[62.485s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/materials/textures/House_3_Diffuse.png
+[62.486s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/model.config
+[62.486s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_3/model.sdf
+[62.487s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1
+[62.487s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/model-1_4.sdf
+[62.487s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/meshes
+[62.487s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/meshes/house_1.dae
+[62.488s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/model-1_3.sdf
+[62.488s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/materials
+[62.488s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/materials/scripts
+[62.489s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/materials/scripts/house_1.material
+[62.489s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/materials/textures
+[62.489s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/materials/textures/House_1_Normal.png
+[62.490s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/materials/textures/House_1_Diffuse.png
+[62.492s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/materials/textures/House_1_Spec.png
+[62.493s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/model.config
+[62.493s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_1/model.sdf
+[62.494s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity
+[62.494s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/meshes
+[62.494s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/meshes/mcity.obj
+[62.496s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/meshes/mcity.mtl
+[62.496s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials
+[62.496s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures
+[62.497s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/GuardRail.png
+[62.498s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/OverheadSigns.png
+[62.498s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Brick.png
+[62.499s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Road_DoubleYellowLine.png
+[62.499s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Road_SingleWhiteLine.png
+[62.500s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Road_DoubleYellowLine_Light.png
+[62.500s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Road_Blank.png
+[62.501s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/StreetLamp_Short.png
+[62.502s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Colors.png
+[62.502s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/OverheadSignBase.png
+[62.502s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/StreetLamp_Tall.png
+[62.503s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Tunnel.png
+[62.504s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Buildings.png
+[62.504s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Concrete_Ground.png
+[62.505s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Crosswalk.png
+[62.506s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/TrafficBarrel.png
+[62.507s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/RailroadGate.png
+[62.508s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Gravel.png
+[62.514s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Grass.png
+[62.519s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Curb.png
+[62.520s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Road_Blank_Light.png
+[62.521s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/materials/textures/Asphalt.png
+[62.521s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/model.config
+[62.522s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/mcity/model.sdf
+[62.522s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2
+[62.522s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/model-1_4.sdf
+[62.522s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/meshes
+[62.522s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/meshes/house_2.dae
+[62.523s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/model-1_3.sdf
+[62.523s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/materials
+[62.523s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/materials/scripts
+[62.523s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/materials/scripts/house_2.material
+[62.524s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/materials/textures
+[62.524s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/materials/textures/House_2_Diffuse.png
+[62.526s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/model.config
+[62.526s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/house_2/model.sdf
+[62.526s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier
+[62.527s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/model-1_4.sdf
+[62.527s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/meshes
+[62.527s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/meshes/jersey_barrier.dae
+[62.527s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/materials
+[62.528s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/materials/textures
+[62.528s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/materials/textures/jersey_barrier_spec.png
+[62.528s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/materials/textures/jersey_barrier_diffuse.png
+[62.529s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/materials/textures/jersey_barrier.png
+[62.529s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/model.config
+[62.529s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/jersey_barrier/model.sdf
+[62.530s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant
+[62.530s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/model-1_2.sdf
+[62.530s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/model-1_4.sdf
+[62.530s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/meshes
+[62.530s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/meshes/powerplant.dae
+[62.533s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/model-1_3.sdf
+[62.533s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials
+[62.533s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures
+[62.534s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_8.png
+[62.534s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_37.png
+[62.534s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_1.png
+[62.535s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_36.png
+[62.535s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_23.png
+[62.535s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_25.png
+[62.536s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_27.png
+[62.537s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_6.png
+[62.538s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_13.png
+[62.539s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_2.png
+[62.539s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_21.png
+[62.540s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_34.png
+[62.540s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_33.png
+[62.540s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_7.png
+[62.541s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_32.png
+[62.541s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_19.png
+[62.541s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_20.png
+[62.542s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_11.png
+[62.542s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_38.png
+[62.542s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_17.png
+[62.543s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_3.png
+[62.544s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_35.png
+[62.544s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_10.png
+[62.545s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_12.png
+[62.545s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_26.png
+[62.545s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_9.png
+[62.545s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_.png
+[62.546s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/materials/textures/__auto_22.png
+[62.546s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/model.config
+[62.546s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/powerplant/model.sdf
+[62.547s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange
+[62.547s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/meshes
+[62.547s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/meshes/cloverleaf.obj
+[62.548s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/meshes/cloverleaf.mtl
+[62.548s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/materials
+[62.549s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/materials/textures
+[62.549s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/materials/textures/arrow.png
+[62.549s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/materials/textures/grass.png
+[62.555s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/materials/textures/cross.png
+[62.557s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/materials/textures/road.png
+[62.559s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/materials/textures/concrete.png
+[62.562s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/model.config
+[62.562s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/cloverleaf_interchange/model.sdf
+[62.562s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station
+[62.563s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/model-1_4.sdf
+[62.563s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/meshes
+[62.563s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/meshes/gas_station.dae
+[62.564s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/model-1_3.sdf
+[62.564s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/materials
+[62.564s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/materials/scripts
+[62.565s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/materials/scripts/gas_station.material
+[62.565s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/materials/textures
+[62.565s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/materials/textures/GasStation_Normal.png
+[62.565s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/materials/textures/GasStation_Spec.png
+[62.566s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/materials/textures/GasStation_Diffuse.png
+[62.567s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/model.config
+[62.568s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/gas_station/model.sdf
+[62.568s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster
+[62.568s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/model-1_4.sdf
+[62.568s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/meshes
+[62.568s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/meshes/dumpster.dae
+[62.569s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/model-1_3.sdf
+[62.569s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/materials
+[62.569s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/materials/scripts
+[62.569s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/materials/scripts/dumpster.material
+[62.569s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/materials/textures
+[62.569s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/materials/textures/Dumpster_Spec.png
+[62.571s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/materials/textures/Dumpster_Diffuse.png
+[62.573s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/model.config
+[62.574s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/models/dumpster/model.sdf
+[62.574s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/rviz
+[62.574s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/rviz/ros2.rviz
+[62.574s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/worlds
+[62.575s] -- Installing: /sbel/gazebo-demo/install/car_demo/share/car_demo/worlds/mcity.world
+[62.575s] -- Up-to-date: /sbel/gazebo-demo/install/car_demo/lib/libPriusHybridPlugin.so
+[62.581s] Invoked command in '/sbel/gazebo-demo/build/car_demo' returned '0': CMAKE_PREFIX_PATH=/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/sbel/gazebo-demo/install/car_demo:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble GAZEBO_MODEL_PATH=/sbel/gazebo-demo/install/prius_description/share/prius_description/models:${GAZEBO_MODEL_PATH} LD_LIBRARY_PATH=/sbel/gazebo-demo/install/prius_msgs/lib:/sbel/gazebo-demo/install/car_demo/lib:/chrono_ros_interfaces/install/chrono_ros_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /sbel/gazebo-demo/build/car_demo
