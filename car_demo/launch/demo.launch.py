@@ -47,6 +47,14 @@ def generate_launch_description():
                 "use_rviz",
                 default_value="true",
                 description="Open RViz with the simulation"),
+        DeclareLaunchArgument(
+            'trajectory_mode',
+            default_value='straight',
+            description='The trajectory mode to be used by the controller (straight, circle, half_sine)'),
+        DeclareLaunchArgument(
+            'trajectory_duration',
+            default_value='10',
+            description='The duration for which the trajectory should be executed in seconds'),
 
         Node(
             package="robot_state_publisher",
@@ -70,6 +78,7 @@ def generate_launch_description():
             condition=IfCondition(LaunchConfiguration("use_rviz"))
         ),
 
+        # Comment out the keyboard teleop node to avoid conflicts
         # Node(
         #     package="car_demo",
         #     executable="prius_teleop_keyboard.py",
@@ -88,7 +97,6 @@ def generate_launch_description():
             ],
             output='screen',
         ),
-
 
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
