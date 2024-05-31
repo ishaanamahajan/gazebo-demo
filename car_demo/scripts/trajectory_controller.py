@@ -71,6 +71,11 @@ class TrajectoryController(Node):
             self.publish_command(self.throttle_value, 0.3)  # Adjust the steering angle for left turn
             time.sleep(0.1)
 
+        phase_end_time = current_time + self.initial_straight_duration
+        while self.get_clock().now().seconds_nanoseconds()[0] < phase_end_time:
+            self.publish_command(self.throttle_value, 0.0)
+            time.sleep(0.1)
+
         # Phase 2: Steer right to create the second half of the semi-circle
         current_time = self.get_clock().now().seconds_nanoseconds()[0]
         phase_end_time = current_time + self.turn_duration
