@@ -1264,9 +1264,11 @@
     <ros>
       <namespace>prius</namespace>
       <argument>odom:=ground_truth</argument>
+      
     </ros>
     <body_name>chassis</body_name>
     <topic_name>base_pose_ground_truth</topic_name>
+    <update_rate>5</update_rate>
   </plugin>
 </gazebo>
 
