@@ -84,6 +84,8 @@ class TrajectoryController(Node):
             time.sleep(0.1)
 
     def run(self):
+        time.sleep(5)
+
         if self.mode == 'straight':
             self.get_logger().info("Running straight line trajectory")
             self.straight_line()
