@@ -1,1 +1,1 @@
-/sbel/gazebo-demo/install/car_demo:/sbel/gazebo-demo/install/prius_msgs:/sbel/gazebo-demo/install/prius_description:/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble
+/chrono_ros_interfaces/install/chrono_ros_interfaces:/opt/ros/humble
